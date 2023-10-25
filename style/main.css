@@ -1,0 +1,17 @@
+/* Source: https://css-tricks.com/box-sizing/ */
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #FED500;
+}
+
+body {
+    font-family: Tahoma, serif;
+}
+
+footer {
+    background-color: #FED500;
+}
+
