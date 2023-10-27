@@ -5,7 +5,30 @@
 
 header {
     background-color: #FED500;
+    padding: 8px;
+    margin: 0;
+    text-align: center;
 }
+
+header li{
+    display: inline;
+    padding-left: 120px;
+}
+header li a{
+    color: #333;
+    text-decoration: none;
+    padding: 13px;
+}
+header li a:hover{
+    color: red;
+}
+
+header li img{
+    width: 70px;
+    float: left;
+    margin-top: -20px;
+}
+
 
 body {
     font-family: Tahoma, serif;
