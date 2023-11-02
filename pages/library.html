@@ -5,29 +5,53 @@
     <title>Library</title>
     <link type="text/css" rel="stylesheet" href="../style/main.css">
 </head>
-<header><h1>NAVBAR</h1></header>
-
 <body>
-<h1>The library</h1>
-<h2>It is open for students and employees from 06.00-22.00 (08.00-20.00), by use of card and code.
-    <br> External users have access when the library are staffed. </h2>
+    <!-- a div section where the menu bar is defined and creates a class -->
+    <div class="menu-bar">
+        <!-- Logo created by the group and make it clickable -->
+        <!-- Converted from jpeg to png -->
+        <a href="../index.html"><img src="../media/logo.png" alt="p"></a>
+        <ul> <!-- creates unordered list and ranks the pages -->
+            <!-- first list as Home and make it active when you are in that page -->
+            <li><a href="../index.html">Home</a></li>
+            <!-- Pages (has an icon next to it that shows several pages) -->
+            <li class="active"><a href="#"><i class="fa fa-align-justify"></i>Pages</a>
+                <!-- creates a sub-list (under Pages, multi-selection) -->
+                <!-- Call it a sub menu and create a class for it -->
+                <div class="sub-menu">
+                    <!-- unordered list -->
+                    <ul>
+                        <!-- Lists all pages under Pages -->
+                        <li><a href="library.html">Library</a></li>
+                        <li><a href="canteen.html">Canteen</a></li>
+                        <li><a href="topical.html">Topical</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- last page in the list -->
+            <li><a href="accessibility.html"><i class="fab fa-accessible-icon"></i>Accessibility</a></li>
+        </ul>
+    </div>
+    <h1>The library</h1>
+    <h2>It is open for students and employees from 06.00-22.00 (08.00-20.00), by use of card and code.
+        <br> External users have access when the library are staffed. </h2>
 
-<p> Staffed hours for the libraries at Pilestredet</p>
-<ul>
-    <li>Monday–Thursday: 08.00–18.30</li>
-    <li>Friday: 08.00–15.30</li>
-</ul>
+    <p> Staffed hours for the libraries at Pilestredet</p>
+    <ul>
+        <li>Monday–Thursday: 08.00–18.30</li>
+        <li>Friday: 08.00–15.30</li>
+    </ul>
 
-<h2>Location</h2>
-<p>The library is located on the third floor.</p>
+    <h2>Location</h2>
+    <p>The library is located on the third floor.</p>
 
-<p>
-    Postal address: <br>
-    Library P35 <br>
-    OsloMet – Oslo Metropolitan University<br>
-    P.O. Box 4, St. Olavs plass<br>
-    N-0130 Oslo<br>
-    Norway </p>
-<footer><h1>FOOTER</h1></footer>
+    <p>
+        Postal address: <br>
+        Library P35 <br>
+        OsloMet – Oslo Metropolitan University<br>
+        P.O. Box 4, St. Olavs plass<br>
+        N-0130 Oslo<br>
+        Norway </p>
+    <footer><h1>FOOTER</h1></footer>
 </body>
 </html>
