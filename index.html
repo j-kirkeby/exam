@@ -2,27 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Home</title>
+    <!-- link to the css file -->
     <link type="text/css" rel="stylesheet" href="style/main.css">
+    <!-- link to the icon for pages -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="navbar">
-        <ul>
-            <li><img src="media/Logo.png" alt=""></li>
-            <li class="active"><a href="pages/accessibility.html">Accessibilty</a></li>
-            <li><a href="#">Pages</a></li>
+    <!-- a div section where the menu bar is defined and creates a class -->
+    <div class="menu-bar">
+        <!-- Logo created by the group and make it clickable -->
+        <!-- Converted from jpeg to png -->
+        <a href="index.html"><img src="media/logo.png" alt="Logo"></a>
+        <ul> <!-- creates unordered list and ranks the pages -->
+            <!-- first list as Home and make it active when you are in that page -->
+            <li class="active"><a href="index.html">Home</a></li>
+            <!-- Pages (has an icon next to it that shows several pages) -->
+            <li><a href="#"><i class="fa fa-align-justify"></i>Pages</a>
+                <!-- creates a sub-list (under Pages, multi-selection) -->
+                <!-- Call it a sub menu and create a class for it -->
                 <div class="sub-menu">
+                    <!-- unordered list -->
                     <ul>
+                        <!-- Lists all pages under Pages -->
                         <li><a href="pages/library.html">Library</a></li>
                         <li><a href="pages/canteen.html">Canteen</a></li>
                         <li><a href="pages/topical.html">Topical</a></li>
                     </ul>
                 </div>
-            <li><a href="index.html">Home</a></li>
+            </li>
+            <!-- last page in the list -->
+            <li><a href="pages/accessibility.html">Accessibility</a></li>
         </ul>
     </div>
-<h1>Welcome to P35</h1>
-    <p>P35 is a university building belonging to Oslo Metropolitan University. The building is located in the center of the campus in heart of the Oslo, the capital of Norway. The building homes different faculties and has many facilities for the students such as a canteen, a library, several study rooms and laboratories.</p>
+
+
+
+
+    <h1>Welcome to P35</h1>
+        <p>P35 is a university building belonging to Oslo Metropolitan University. The building is located in the center of the campus in heart of the Oslo, the capital of Norway. The building homes different faculties and has many facilities for the students such as a canteen, a library, several study rooms and laboratories.</p>
 
 
     <footer>
