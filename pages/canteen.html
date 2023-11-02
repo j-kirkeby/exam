@@ -3,34 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Canteen</title>
+    <!-- link to the css file -->
     <link type="text/css" rel="stylesheet" href="../style/main.css">
+    <!-- link to the icon for pages -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<header><h1>NAVBAR</h1></header>
 <body>
+    <!-- a div section where the menu bar is defined and creates a class -->
+    <div class="menu-bar">
+        <!-- Logo created by the group and make it clickable -->
+        <!-- Converted from jpeg to png -->
+        <a href="../index.html"><img src="../media/logo.png" alt="p"></a>
+        <ul> <!-- creates unordered list and ranks the pages -->
+            <!-- first list as Home and make it active when you are in that page -->
+            <li><a href="../index.html">Home</a></li>
+            <!-- Pages (has an icon next to it that shows several pages) -->
+            <li class="active"><a href="#"><i class="fa fa-align-justify"></i>Pages</a>
+                <!-- creates a sub-list (under Pages, multi-selection) -->
+                <!-- Call it a sub menu and create a class for it -->
+                <div class="sub-menu">
+                    <!-- unordered list -->
+                    <ul>
+                        <!-- Lists all pages under Pages -->
+                        <li><a href="library.html">Library</a></li>
+                        <li><a href="canteen.html">Canteen</a></li>
+                        <li><a href="topical.html">Topical</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- last page in the list -->
+            <li><a href="accessibility.html"><i class="fab fa-accessible-icon"></i>Accessibility</a></li>
+        </ul>
+    </div>
+
     <h1>Canteen in P35</h1>
-    <h2>Olaf spiseri</h2>
-    <p>Olaf spiseri is the name of the canteen in P35 at OsloMet university. It is located at P35 on the first floor.
-    The canteen offers a buffet with hot dishes, soups, toppings, and bread where you pay by weight.
-    You will also find a wide selection of wraps and spreads, as well as cakes and various hot and cold beverages.</p>
+        <h2>Olaf spiseri</h2>
+        <p>Olaf spiseri is the name of the canteen in P35 at OsloMet university. It is located at P35 on the first floor.
+        The canteen offers a buffet with hot dishes, soups, toppings, and bread where you pay by weight.
+        You will also find a wide selection of wraps and spreads, as well as cakes and various hot and cold beverages.</p>
 
     <h3>Menu</h3>
-<ul>
-    <li>Buffet:
-        <br> The buffet offers a selection of hot dishes and plenty of delicious sides.
-            Allergens: see labeling on the buffet.</li>
-    <li>Price:
-        <br> Green buffet loose weight NOK 15.90 per 100 grams. //Full buffet loose weight NOK 17.20 per 100 grams.</li>
-</ul>
+    <ul>
+        <li>Buffet:
+            <br> The buffet offers a selection of hot dishes and plenty of delicious sides.
+                Allergens: see labeling on the buffet.</li>
+        <li>Price:
+            <br> Green buffet loose weight NOK 15.90 per 100 grams. //Full buffet loose weight NOK 17.20 per 100 grams.</li>
+    </ul>
     <h3>Opening hours</h3>
     <p>Ordinary opening hours:
         <br> Monday - friday: 08.00 - 15.30</p>
 
     <h3>Contact information</h3>
-<ul>
-    <li>Kitchen: 12345678 </li>
-    <li>Office: 87654321 </li>
-    <li>Address: Pilestredet 35, 0166 Oslo </li>
-</ul>
+    <ul>
+        <li>Kitchen: 12345678 </li>
+        <li>Office: 87654321 </li>
+        <li>Address: Pilestredet 35, 0166 Oslo </li>
+    </ul>
+
     <footer><h1>FOOTER</h1></footer>
 </body>
 </html>
