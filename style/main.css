@@ -2,19 +2,72 @@
 * {
     box-sizing: border-box;
 }
-
 body {
-    font-family: Tahoma, serif;
+    font-family: Tahoma, serif; /* choose a font that fits */
 }
+.menu-bar{ /* refers to the class */
+    background-color: #FED500; /* background color */
+    text-align: right; /* adjustment of the text */
+}
+.menu-bar img{ /* refers to img in the menu-bar */
+    float: left; /* places the image on the left */
+    margin-top:-0.2px; /* the distance between one element and the edge(above) */
+    margin-left: 40px; /* the distance between one element and the edge(left) */
+    width: 90px; /* selects the width of an element */
+    height: 70px; /* selects the height of an element */
+}
+.menu-bar ul{
+    display: inline-flex; /* affects how the element is placed and other elements next to it */
+    list-style: none; /* list-style type none (no list items are displayed */
+}
+.menu-bar ul li{
+    width: 100px; /* selects the width of an element */
+    padding: 10px; /* determines the distance between the content of an HTML element and its borders */
+    margin-right: 50px; /* the distance between one element and the edge(right) */
+    text-align: left; /* adjustment of the text */
+}
+.menu-bar ul li a{
+    text-decoration: none; /* no decoration on the text */
+    color: #212120; /* text color */
+}
+.active, .menu-bar ul li:hover{ /* changes the background color of each element when you hover over them with the mouse */
+    background-color: antiquewhite; /* background color*/
+    border-radius: 2px; /* giving it a rounded edge */
+}
+.sub-menu{
+    display: none; /* affects how the element is placed and other elements next to it */
+}
+.menu-bar ul li:hover .sub-menu{ /* applies to the sub menu */
+    display: block; /* affects how the element is placed and other elements next to it */
+    position: absolute; /* */
+    background: #FED500; /* background color */
+    margin-top: 15px; /* the distance between one element and the edge(top) */
+    margin-left: -15px; /* the distance between one element and the edge(left) */
+}
+.menu-bar ul li:hover .sub-menu ul{
+    display: block; /* affects how the element is placed and other elements next to it */
+    margin: 10px; /* the distance between one element and the edge */
 
-.navbar {
-    background-color: #FED500;
-    text-align: center;
-    padding: 8px;
-    margin: 0;
+}
+.menu-bar ul li:hover .sub-menu ul li{
+    width: 150px; /* selects the width of an element */
+    padding: 10px; /* determines the distance between the content of an HTML element and its borders */
+    border-bottom: 1px dotted antiquewhite; /* */
+    background: transparent; /* */
+    border-radius: 0; /* giving it a rounded edge */
+    text-align: left; /* adjustment of the text */
+}
+.menu-bar ul li:hover .sub-menu ul li:last-child{ /* last line */
+    border-bottom: none; /* Removes the last line */
+}
+.menu-bar ul li:hover .sub-menu ul li a:hover{ /* changes the background color of each element when you hover over them with the mouse */
+    color: antiquewhite; /* text color */
+}
+.menu-bar .fa{ /* distance between icon and text */
+    margin-right: 5px; /* the distance between one element and the edge(right) */
 }
 
 
 footer {
-    background-color: #FED500;
+    background-color: #FED500; /* background color */
 }
