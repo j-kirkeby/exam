@@ -30,6 +30,7 @@ body {
     text-decoration: none; /* no decoration on the text */
     color: #212120; /* text color */
 }
+/* https://www.w3schools.com/cssref/sel_active.php */
 .active, .menu-bar ul li:hover{ /* changes the background color of each element when you hover over them with the mouse */
     background-color: antiquewhite; /* background color*/
     border-radius: 2px; /* giving it a rounded edge */
@@ -47,7 +48,6 @@ body {
 .menu-bar ul li:hover .sub-menu ul{
     display: block; /* affects how the element is placed and other elements next to it */
     margin: 10px; /* the distance between one element and the edge */
-
 }
 .menu-bar ul li:hover .sub-menu ul li{
     width: 150px; /* selects the width of an element */
