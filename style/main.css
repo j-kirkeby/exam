@@ -66,6 +66,32 @@ body {
 .menu-bar .fa{ /* distance between icon and text */
     margin-right: 5px; /* the distance between one element and the edge(right) */
 }
+/* the specific style rules within the media query block are only enabled
+when the browser window or device has a width of 800 pixels or less */
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 12px; /* sets the size of the text */
+    }
+    .menu-bar{
+        width: 100%; /* selects the width of an element */
+        text-align: right; /* adjustment of the text */
+        display: inline-flex; /* the boxes sit next to each other on the same line */
+    }
+    .menu-bar img{
+        width: 50px; /* selects the width of an element */
+        height: 57px; /* selects the height of an element */
+        margin-left: 5px; /* the distance between one element and the edge(left) */
+        margin-top:-0.2px; /* the distance between one element and the edge(top) */
+    }
+    .menu-bar ul li{
+        width: 75px;  /* selects the width of an element */
+        margin-left: -20px; /* the distance between one element and the edge(left) */
+        margin-right: 17px; /* the distance between one element and the edge(right) */
+    }
+    .active, .menu-bar ul li:hover{ /* changes the background color of each element when you hover over them with the mouse */
+        border-radius: 5px; /* giving it a rounded edge */
+    }
+}
 
 
 footer {
