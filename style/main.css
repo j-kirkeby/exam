@@ -1,6 +1,6 @@
 /* Source: https://css-tricks.com/box-sizing/ */
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* */
 }
 body {
     font-family: Tahoma, serif; /* choose a font that fits */
@@ -40,7 +40,7 @@ body {
 }
 .menu-bar ul li:hover .sub-menu{ /* applies to the sub menu */
     display: block; /* affects how the element is placed and other elements next to it */
-    position: absolute; /* */
+    position: absolute; /* the positioning properties that can be used to control the location */
     background: #FED500; /* background color */
     margin-top: 15px; /* the distance between one element and the edge(top) */
     margin-left: -15px; /* the distance between one element and the edge(left) */
@@ -52,8 +52,8 @@ body {
 .menu-bar ul li:hover .sub-menu ul li{
     width: 150px; /* selects the width of an element */
     padding: 10px; /* determines the distance between the content of an HTML element and its borders */
-    border-bottom: 1px dotted antiquewhite; /* */
-    background: transparent; /* */
+    border-bottom: 1px dotted antiquewhite; /* the element will have a 1 pixel wide bottom border which is dashed and has a corresponding colour */
+    background: transparent; /* sets the rear background color of an element to transparent */
     border-radius: 0; /* giving it a rounded edge */
     text-align: left; /* adjustment of the text */
 }
