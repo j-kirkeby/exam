@@ -39,47 +39,62 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Accessibility</h1>
-        <h2>A good user interface is...</h2>
-        <!--Using the semantic element <strong> to indicate which aspects are most important-->
-        <!--List from lecture 9 on accessibility in Canvas-->
-        <ul>
-            <li>Secure</li>
-            <li><strong>Functional</strong></li>
-            <li><strong>Accessible</strong></li>
-            <li><strong>User friendly</strong></li>
-            <li>Appealing</li>
-        </ul>
-        <p>The <strong>bold</strong> aspects are most important for this course.</p>
-
-        <h2>Web Accessibility Initiative</h2>
-        <p>The Web Accessibility Initiative have created the Web Content Accessibility Guidelines
-            (<a href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/">WCAG2</a>). Which provide insight for important
-            aspects consider with regards to accessibility:</p>
-        <ul>
-            <li>Provide text alternatives for non-text content
+    <main class="wrapper">
+        <article class="grid-ignore">
+            <div class="grid-text-1">
+                <h1>Accessibility</h1>
+                <h2>WAVE - Test results</h2>
+                <p>WAVE test results, findings:</p>
                 <ul>
-                    <li>I.e. provide "alt"-text for all images</li>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
                 </ul>
-            </li>
-        </ul>
+            </div>
+            <div class="grid-img-1">
+                <img class="article-image" src="../media/wave-test.png" alt="Results screen from WAVE test">
+            </div>
+            <div class="grid-text-2">
+                <h2>Lighthouse - Test results</h2>
+                <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+                    Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            </div>
+            <div class="grid-img-2">
+                <img class="article-image" src="../media/lighthouse-test.jpg" alt="Results screen from Lighthouse test">
+            </div>
+        </article>
 
-        <h2>WAVE - Test results</h2>
-        <p>WAVE test results, findings:</p>
-        <ul>
-            <li>List item 1</li>
-            <li>List item 2</li>
-            <li>List item 3</li>
-        </ul>
-        <img src="../media/wave-test.png" alt="Results screen from WAVE test">
+        <div class="grid-aside">
+            <aside>
+                <h2>A good user interface is...</h2>
+                <!--Using the semantic element <strong> to indicate which aspects are most important-->
+                <!--List from lecture 9 on accessibility in Canvas-->
+                <ul>
+                    <li>Secure</li>
+                    <li><strong>Functional</strong></li>
+                    <li><strong>Accessible</strong></li>
+                    <li><strong>User friendly</strong></li>
+                    <li>Appealing</li>
+                </ul>
+                <p>The <strong>bold</strong> aspects are most important for this course.</p>
 
-        <h2>Lighthouse - Test results</h2>
-        <img src="../media/lighthouse-test.jpg" alt="Results screen from Lighthouse test">
+                <h2>Web Accessibility Initiative</h2>
+                <p>The Web Accessibility Initiative have created the Web Content Accessibility Guidelines
+                    (<a href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/">WCAG2</a>). Which provide insight for important
+                    aspects consider with regards to accessibility:</p>
+                <ul>
+                    <li>Provide text alternatives for non-text content</li>
+                    <li>Make it easier for users to see and hear content</li>
+                    <li>Make all functionality available from a keyboard</li>
+                    <li>Help users navigate and find content</li>
+                    <li>Make text readable and understandable</li>
+                    <li>Make content appear and operate in predictable ways</li>
+                </ul>
+            </aside>
+        </div>
     </main>
     <footer>
         <h1>FOOTER</h1>
     </footer>
-</div>
 </body>
 </html>
