@@ -83,6 +83,7 @@ body {
         width: 400px;
         height: 250px;
     }
+    /*Lag nye classer for grid boksen din i index og fylt ut her i css*/
 }
 /* the specific style rules within the media query block are only enabled
 when the browser window or device has a width of 800 pixels or less */
@@ -113,6 +114,7 @@ when the browser window or device has a width of 800 pixels or less */
         width: 150px;
         height: 200px;
     }
+    /*Lag nye classer for grid boksen din i index og fylt ut her i css*/
 }
 
 /*** GRID ***/
