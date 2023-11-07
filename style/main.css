@@ -101,6 +101,18 @@ when the browser window or device has a width of 800 pixels or less */
     .active, .menu-bar ul li:hover{ /* changes the background color of each element when you hover over them with the mouse */
         border-radius: 5px; /* giving it a rounded edge */
     }
+    .image-p35 img{
+        max-width: 250px;
+        max-height: 200px;
+    }
+}
+.image-p35 img{
+    width: 450px;
+    height: 350px;
+}
+
+.caption h4,p{
+    display: inline;
 }
 
 /*** GRID ***/
