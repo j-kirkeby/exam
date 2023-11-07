@@ -68,6 +68,12 @@ body {
 .menu-bar .fa{ /* distance between icon and text */
     margin-right: 5px; /* the distance between one element and the edge(right) */
 }
+@media (min-width: 701px) {
+    .image-p35 img{
+        width: 350px;
+        height: 230px;
+    }
+}
 /* the specific style rules within the media query block are only enabled
 when the browser window or device has a width of 800 pixels or less */
 @media (max-width: 700px) {
@@ -93,20 +99,19 @@ when the browser window or device has a width of 800 pixels or less */
     .active, .menu-bar ul li:hover{ /* changes the background color of each element when you hover over them with the mouse */
         border-radius: 5px; /* giving it a rounded edge */
     }
-}
-/*   */
-.image-p35 img{
-    width: 350px;
-    height: 230px;
+    .image-p35 img{
+        width: 250px;
+        height: 300px;
+    }
 }
 /*   */
 .image-name {
-    font-weight: 500;
-    color: #FED500;
+    font-weight: 500; /* */
+    color: #FED500; /* */
 }
 /* */
 .caption p{
-    display: inline;
+    display: inline; /* */
 }
 
 /*** GRID ***/
@@ -126,7 +131,6 @@ when the browser window or device has a width of 800 pixels or less */
         padding: 2rem;
         grid-column: 1 / 2;
         grid-row: 1;
-        padding: 2rem;
     }
 
     .grid-img-1 {
