@@ -8,6 +8,7 @@
     <!-- link to the icon for pages -->
     <!-- https://www.w3schools.com/icons/default.asp -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- -->
     <link rel="icon" type="image/x-icon" href="media/favicon.png">
 </head>
 <body>
@@ -39,6 +40,7 @@
             </ul>
         </nav>
     </header>
+
     <main class="wrapper">
         <article class="grid-ignore">
             <div class="grid-text-1">
@@ -48,13 +50,17 @@
                     The building homes different faculties and has many facilities for the students such as a canteen, a library, several study rooms and laboratories.</p>
             </div>
             <div class="grid-img-1">
-                <div class="image-p35">
-                    <!--https://journalen.oslomet.no/2020/10/digital-karriereuke-pa-oslomet-->
-                    <img src="media/oslomet_p35.png" alt="P35">
+                    <!-- -->
+                    <picture class="image-p35">
+                        <!-- https://journalen.oslomet.no/2020/10/digital-karriereuke-pa-oslomet -->
+                        <!-- -->
+                        <source media="(min-width:700px)" srcset="media/oslomet_p35.png">
+                        <source media="(min-width:465px)" srcset="media/oslomet_p35.png">
+                        <img src="media/oslomet_p35.png" alt="P35" style="width:auto;">
+                    </picture>
                     <div class="caption">
-                        <p><span class="image-name">P35</span> / Photo: OsloMet</p>
+                        <p><span class="image-name">P35</span>/ Photo: OsloMet</p>
                     </div>
-                </div>
             </div>
         </article>
     </main>

@@ -35,7 +35,7 @@ body {
 /* https://www.w3schools.com/cssref/sel_active.php */
 .active, .menu-bar ul li:hover{ /* changes the background color of each element when you hover over them with the mouse */
     background-color: antiquewhite; /* background color*/
-    border-radius: 2px; /* giving it a rounded edge */
+    border-radius: 5px; /* giving it a rounded edge */
 }
 .sub-menu{
     display: none; /* affects how the element is placed and other elements next to it */
@@ -44,7 +44,7 @@ body {
     display: block; /* affects how the element is placed and other elements next to it */
     position: absolute; /* the positioning properties that can be used to control the location */
     background: #FED500; /* background color */
-    margin-top: 15px; /* the distance between one element and the edge(top) */
+    margin-top: 10px; /* the distance between one element and the edge(top) */
     margin-left: -15px; /* the distance between one element and the edge(left) */
 }
 .menu-bar ul li:hover .sub-menu ul{
@@ -93,21 +93,19 @@ when the browser window or device has a width of 800 pixels or less */
     .active, .menu-bar ul li:hover{ /* changes the background color of each element when you hover over them with the mouse */
         border-radius: 5px; /* giving it a rounded edge */
     }
-    .image-p35 img{
-        max-width: 250px;
-        max-height: 200px;
-    }
 }
+/*   */
 .image-p35 img{
-    width: 450px;
-    height: 350px;
+    width: 350px;
+    height: 230px;
 }
-/*  */
+/*   */
 .image-name {
     font-weight: 500;
-    color: orange;
+    color: #FED500;
 }
-.caption h4,p{
+/* */
+.caption p{
     display: inline;
 }
 
