@@ -4,27 +4,8 @@
 }
 body {
     font-family: Tahoma, serif; /* choose a font that fits */
-    margin: 0;
+    margin: 0; /* the distance between one element and the edge */
 }
-
-footer {
-    background-color: #FED500; /* background color */
-}
-
-aside {
-
-}
-
-.article-image {
-    max-width: 300px;
-}
-
-/* Text under image */
-.image-name {
-    font-weight: 500;
-    color: orange;
-}
-
 /*** NAVBAR ***/
 .menu-bar{ /* refers to the class */
     background-color: #FED500; /* background color */
@@ -93,7 +74,6 @@ when the browser window or device has a width of 800 pixels or less */
     header {
         font-size: 12px;
     }
-
     .menu-bar{
         width: 100%; /* selects the width of an element */
         text-align: right; /* adjustment of the text */
@@ -122,7 +102,11 @@ when the browser window or device has a width of 800 pixels or less */
     width: 450px;
     height: 350px;
 }
-
+/*  */
+.image-name {
+    font-weight: 500;
+    color: orange;
+}
 .caption h4,p{
     display: inline;
 }
@@ -141,6 +125,7 @@ when the browser window or device has a width of 800 pixels or less */
     }
 
     .grid-text-1 {
+        padding: 2rem;
         grid-column: 1 / 2;
         grid-row: 1;
         padding: 2rem;
@@ -222,4 +207,9 @@ when the browser window or device has a width of 800 pixels or less */
 .grid-ignore {
     display: contents;
 }
-
+.article-image {
+    max-width: 300px;
+}
+footer {
+    background-color: #FED500; /* background color */
+}
