@@ -4,6 +4,7 @@
 }
 body {
     font-family: Tahoma, serif; /* choose a font that fits */
+    margin: 0;
 }
 
 footer {
@@ -12,6 +13,12 @@ footer {
 
 .article-image {
     max-width: 300px;
+}
+
+/*  */
+.image-name {
+    font-weight: 500;
+    color: orange;
 }
 
 /*** NAVBAR ***/
@@ -78,7 +85,7 @@ footer {
 }
 /* the specific style rules within the media query block are only enabled
 when the browser window or device has a width of 800 pixels or less */
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     body {
         font-size: 12px; /* sets the size of the text */
     }
@@ -124,6 +131,7 @@ when the browser window or device has a width of 800 pixels or less */
     }
 
     .grid-text-1 {
+        padding: 2rem;
         grid-column: 1 / 2;
         grid-row: 1;
     }
@@ -163,6 +171,7 @@ when the browser window or device has a width of 800 pixels or less */
     .grid-text-1 {
         grid-column: 1 / 2;
         grid-row: 1;
+        padding: 2rem;
     }
 
     .grid-img-1 {
