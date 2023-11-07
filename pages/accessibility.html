@@ -3,36 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <title>Accessibility</title>
+    <!-- link to the css file -->
     <link type="text/css" rel="stylesheet" href="../style/main.css">
+    <!-- link to the icon for pages -->
+    <!-- https://www.w3schools.com/icons/default.asp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<header><h1>NAVBAR</h1></header>
+    <!-- a header section where the menu bar is defined and creates a class -->
+    <header>
+        <nav class="menu-bar">
+            <!-- Logo created by the group and make it clickable -->
+            <!-- Converted from jpeg to png -->
+            <a href="../index.html"><img src="../media/logo.png" alt="p"></a>
+            <ul> <!-- creates unordered list and ranks the pages -->
+                <!-- first list as Home and make it active when you are in that page -->
+                <li><a href="../index.html">Home</a></li>
+                <!-- Pages (has an icon next to it that shows several pages) -->
+                <li><a href="#"><i class="fa fa-align-justify"></i>Pages</a>
+                    <!-- creates a sub-list (under Pages, multi-selection) -->
+                    <!-- Call it a sub menu and create a class for it -->
+                    <div class="sub-menu">
+                        <!-- unordered list -->
+                        <ul>
+                            <!-- Lists all pages under Pages -->
+                            <li><a href="library.html">Library</a></li>
+                            <li><a href="canteen.html">Canteen</a></li>
+                            <li><a href="topical.html">Topical</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- last page in the list -->
+                <li class="active"><a href="accessibility.html"><i class='fab fa-accessible-icon'></i>Accessibility</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1>Accessibility</h1>
-<h2>A good user interface is...</h2>
-<!--Using the semantic element <strong> to indicate which aspects are most important-->
-<!--List from lecture 9 on accessibility in Canvas-->
-<ul>
-    <li>Secure</li>
-    <li><strong>Functional</strong></li>
-    <li><strong>Accessible</strong></li>
-    <li><strong>User friendly</strong></li>
-    <li>Appealing</li>
-</ul>
-<p>The <strong>bold</strong> aspects are most important for this course.</p>
+    <main class="wrapper">
+        <article class="grid-ignore">
+            <div class="grid-text-1">
+                <h1>Accessibility</h1>
+                <h2>WAVE - Test results</h2>
+                <p>WAVE test results, findings:</p>
+                <ul>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ul>
+            </div>
+            <div class="grid-img-1">
+                <img class="article-image" src="../media/wave-test.png" alt="Results screen from WAVE test">
+            </div>
+            <div class="grid-text-2">
+                <h2>Lighthouse - Test results</h2>
+                <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+                    Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            </div>
+            <div class="grid-img-2">
+                <img class="article-image" src="../media/lighthouse-test.jpg" alt="Results screen from Lighthouse test">
+            </div>
+        </article>
 
-<h2>Web Accessibility Initiative</h2>
-<p>The Web Accessibility Initiative have created the Web Content Accessibility Guidelines
-    (<a href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/">WCAG2</a>). Which provide insight for important
-    aspects consider with regards to accessibility:</p>
-<ul>
-    <li>Provide text alternatives for non-text content
-        <ul>
-            <li>I.e. provide "alt"-text for all images</li>
-        </ul></li>
+        <div class="grid-aside">
+            <aside>
+                <h2>A good user interface is...</h2>
+                <!--Using the semantic element <strong> to indicate which aspects are most important-->
+                <!--List from lecture 9 on accessibility in Canvas-->
+                <ul>
+                    <li>Secure</li>
+                    <li><strong>Functional</strong></li>
+                    <li><strong>Accessible</strong></li>
+                    <li><strong>User friendly</strong></li>
+                    <li>Appealing</li>
+                </ul>
+                <p>The <strong>bold</strong> aspects are most important for this course.</p>
 
-</ul>
-
-<footer><h1>FOOTER</h1></footer>
+                <h2>Web Accessibility Initiative</h2>
+                <p>The Web Accessibility Initiative have created the Web Content Accessibility Guidelines
+                    (<a href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/">WCAG2</a>). Which provide insight for important
+                    aspects consider with regards to accessibility:</p>
+                <ul>
+                    <li>Provide text alternatives for non-text content</li>
+                    <li>Make it easier for users to see and hear content</li>
+                    <li>Make all functionality available from a keyboard</li>
+                    <li>Help users navigate and find content</li>
+                    <li>Make text readable and understandable</li>
+                    <li>Make content appear and operate in predictable ways</li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <h1>FOOTER</h1>
+    </footer>
 </body>
 </html>

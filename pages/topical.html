@@ -2,20 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Topical</title>
+    <!-- link to the css file -->
+    <link type="text/css" rel="stylesheet" href="../style/main.css">
+    <!-- link to the icon for pages -->
+    <!-- https://www.w3schools.com/icons/default.asp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<header><h1>Welcome to the campus</h1></header>
-<img src="/images/topical.png" alt="topical">
-<p>Given that the home page <a href="https://www.oslomet.no">(OsloMet website)</a> serves as the major introduction to a website, we chose to test how well the users can navigate it by creating two prototypes with two different menu options: a hidden dropdown menu and an extended menu. We believe that displaying an extended menu will improve navigation by providing users with a sense of orientation within the website while the benefit of hiding the menu is that it directs the users' attention to the website's main content.
-    Website A has a hidden menu which is revealed when the user pushes the button on the top right corner of the website while website B has an extended menu on top of the website that shows and allows to click directly to the websites four sides. We have used the interface design software Figma to create our low fidelity prototypes. We opted to use color (pink) in two low-fidelity website prototypes to emphasize the distinction between the menus. See figure 2 and figure 3.  </p>
-<p>We aim to assess the effectiveness of two menu variations: one with a hidden menu and the other with an expanded menu. Our hypothesis is that concealing the menu will redirect the user's attention toward the primary content of the website, whereas displaying an extended menu will enhance navigation.
-    We believe that hiding the menu contributes to a more streamlined appearance of the website. It enables users to concentrate on the information and other elements without distractions. While the benefits of an extended menu are that it simplifies website navigation as it provides a clearer structure, making it easier for users to find their way around.The website's menu plays a pivotal role as the primary tool for users to discover and access various sections or pages within the site. An effective information hierarchy is essential for users to grasp the site's structure and locate pertinent information. After creating two low-fidelity website prototypes with two different menu bars we decided to gather more insights regarding the menu’s information hierarchy. Employing a closed card sorting technique, we examined how our test users grouped and organized the categories and subcategories we considered most relevant for website navigation and content (McElroy, 2017, s.125) ​(McElroy, 2017, s. 125)​. Subsequently, we compared these findings with the initial low-fidelity website prototypes we developed.
-    After writing different elements from the low fidelity website prototypes, such as page names, headings and buttons on post-it notes, we asked five test users to arrange these according to their preference. This demonstrated to us that all participants placed a website navigation bar at the top. Furthermore, they placed two to four alternatives in each navigation bar. Some test users preferred a general introduction about the product on the homepage and then an in-depth explanation on a separate product specific page. While others preferred to have all the information about our product on the first page and not to include a separate product page. While most participants included social media links, contact details, and a contact form in the footer at the bottom of the page, a few others opted to group these elements under the heading <a href="https://www.oslomet.no/om/kontakt">"Contact us"</a> in the navigation bar.    </p>
-<footer>
-    <p>Published by P35, OsloMet, Pilestredet 35, 0176 Oslo, Norway</p>
-    <p>Visit us: <a href="https://www.oslomet.no">Campus</a></p>
-    <p>Contact us: <a href=”mailto:p35@oslomet.com”> <u> E-mail </u> </a></p>
-</footer>
+    <!-- a header section where the menu bar is defined and creates a class -->
+    <header>
+        <nav class="menu-bar">
+            <!-- Logo created by the group and make it clickable -->
+            <!-- Converted from jpeg to png -->
+            <a href="../index.html"><img src="../media/logo.png" alt="p"></a>
+            <ul> <!-- creates unordered list and ranks the pages -->
+                <!-- first list as Home and make it active when you are in that page -->
+                <li><a href="../index.html">Home</a></li>
+                <!-- Pages (has an icon next to it that shows several pages) -->
+                <li class="active"><a href="#"><i class="fa fa-align-justify"></i>Pages</a>
+                    <!-- creates a sub-list (under Pages, multi-selection) -->
+                    <!-- Call it a sub menu and create a class for it -->
+                    <div class="sub-menu">
+                        <!-- unordered list -->
+                        <ul>
+                            <!-- Lists all pages under Pages -->
+                            <li><a href="library.html">Library</a></li>
+                            <li><a href="canteen.html">Canteen</a></li>
+                            <li><a href="topical.html">Topical</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- last page in the list -->
+                <li><a href="accessibility.html"><i class="fab fa-accessible-icon"></i>Accessibility</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="/images/topical.png" alt="topical">
+    <p>Given that the home page <a href="https://www.oslomet.no">(OsloMet website)</a> serves as the major introduction to a website, we chose to test how well the users can navigate it by creating two prototypes with two different menu options: a hidden dropdown menu and an extended menu. We believe that displaying an extended menu will improve navigation by providing users with a sense of orientation within the website while the benefit of hiding the menu is that it directs the users' attention to the website's main content.
+        Website A has a hidden menu which is revealed when the user pushes the button on the top right corner of the website while website B has an extended menu on top of the website that shows and allows to click directly to the websites four sides. We have used the interface design software Figma to create our low fidelity prototypes. We opted to use color (pink) in two low-fidelity website prototypes to emphasize the distinction between the menus. See figure 2 and figure 3.  </p>
+    <p>We aim to assess the effectiveness of two menu variations: one with a hidden menu and the other with an expanded menu. Our hypothesis is that concealing the menu will redirect the user's attention toward the primary content of the website, whereas displaying an extended menu will enhance navigation.
+        We believe that hiding the menu contributes to a more streamlined appearance of the website. It enables users to concentrate on the information and other elements without distractions. While the benefits of an extended menu are that it simplifies website navigation as it provides a clearer structure, making it easier for users to find their way around.The website's menu plays a pivotal role as the primary tool for users to discover and access various sections or pages within the site. An effective information hierarchy is essential for users to grasp the site's structure and locate pertinent information. After creating two low-fidelity website prototypes with two different menu bars we decided to gather more insights regarding the menu’s information hierarchy. Employing a closed card sorting technique, we examined how our test users grouped and organized the categories and subcategories we considered most relevant for website navigation and content (McElroy, 2017, s.125) ​(McElroy, 2017, s. 125)​. Subsequently, we compared these findings with the initial low-fidelity website prototypes we developed.
+        After writing different elements from the low fidelity website prototypes, such as page names, headings and buttons on post-it notes, we asked five test users to arrange these according to their preference. This demonstrated to us that all participants placed a website navigation bar at the top. Furthermore, they placed two to four alternatives in each navigation bar. Some test users preferred a general introduction about the product on the homepage and then an in-depth explanation on a separate product specific page. While others preferred to have all the information about our product on the first page and not to include a separate product page. While most participants included social media links, contact details, and a contact form in the footer at the bottom of the page, a few others opted to group these elements under the heading <a href="https://www.oslomet.no/om/kontakt">"Contact us"</a> in the navigation bar.    </p>
+    <footer>
+        <p>Published by P35, OsloMet, Pilestredet 35, 0176 Oslo, Norway</p>
+        <p>Visit us: <a href="https://www.oslomet.no">Campus</a></p>
+        <p>Contact us: <a href=”mailto:p35@oslomet.com”> <u> E-mail </u> </a></p>
+    </footer>
 </body>
 </html>

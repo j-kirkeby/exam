@@ -1,20 +1,185 @@
 /* Source: https://css-tricks.com/box-sizing/ */
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* */
 }
-
 body {
-    font-family: Tahoma, serif;
+    font-family: Tahoma, serif; /* choose a font that fits */
 }
-
-.navbar {
-    background-color: #FED500;
-    text-align: center;
-    padding: 8px;
-    margin: 0;
-}
-
 
 footer {
-    background-color: #FED500;
+    background-color: #FED500; /* background color */
 }
+
+.article-image {
+    max-width: 300px;
+}
+
+/*** NAVBAR ***/
+.menu-bar{ /* refers to the class */
+    background-color: #FED500; /* background color */
+    text-align: right; /* adjustment of the text */
+}
+.menu-bar img{ /* refers to img in the menu-bar */
+    float: left; /* places the image on the left */
+    margin-top:-0.2px; /* the distance between one element and the edge(above) */
+    margin-left: 40px; /* the distance between one element and the edge(left) */
+    width: 90px; /* selects the width of an element */
+    height: 70px; /* selects the height of an element */
+}
+.menu-bar ul{
+    display: inline-flex; /* affects how the element is placed and other elements next to it */
+    list-style: none; /* list-style type none (no list items are displayed */
+}
+.menu-bar ul li{
+    width: 100px; /* selects the width of an element */
+    padding: 10px; /* determines the distance between the content of an HTML element and its borders */
+    margin-right: 50px; /* the distance between one element and the edge(right) */
+    text-align: left; /* adjustment of the text */
+}
+.menu-bar ul li a{
+    text-decoration: none; /* no decoration on the text */
+    color: #212120; /* text color */
+}
+/* https://www.w3schools.com/cssref/sel_active.php */
+.active, .menu-bar ul li:hover{ /* changes the background color of each element when you hover over them with the mouse */
+    background-color: antiquewhite; /* background color*/
+    border-radius: 2px; /* giving it a rounded edge */
+}
+.sub-menu{
+    display: none; /* affects how the element is placed and other elements next to it */
+}
+.menu-bar ul li:hover .sub-menu{ /* applies to the sub menu */
+    display: block; /* affects how the element is placed and other elements next to it */
+    position: absolute; /* the positioning properties that can be used to control the location */
+    background: #FED500; /* background color */
+    margin-top: 15px; /* the distance between one element and the edge(top) */
+    margin-left: -15px; /* the distance between one element and the edge(left) */
+}
+.menu-bar ul li:hover .sub-menu ul{
+    display: block; /* affects how the element is placed and other elements next to it */
+    margin: 10px; /* the distance between one element and the edge */
+}
+.menu-bar ul li:hover .sub-menu ul li{
+    width: 150px; /* selects the width of an element */
+    padding: 10px; /* determines the distance between the content of an HTML element and its borders */
+    border-bottom: 1px dotted antiquewhite; /* the element will have a 1 pixel wide bottom border which is dashed and has a corresponding colour */
+    background: transparent; /* sets the rear background color of an element to transparent */
+    border-radius: 0; /* giving it a rounded edge */
+    text-align: left; /* adjustment of the text */
+}
+.menu-bar ul li:hover .sub-menu ul li:last-child{ /* last line */
+    border-bottom: none; /* Removes the last line */
+}
+.menu-bar ul li:hover .sub-menu ul li a:hover{ /* changes the background color of each element when you hover over them with the mouse */
+    color: antiquewhite; /* text color */
+}
+.menu-bar .fa{ /* distance between icon and text */
+    margin-right: 5px; /* the distance between one element and the edge(right) */
+}
+/* the specific style rules within the media query block are only enabled
+when the browser window or device has a width of 800 pixels or less */
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 12px; /* sets the size of the text */
+    }
+    .menu-bar{
+        width: 100%; /* selects the width of an element */
+        text-align: right; /* adjustment of the text */
+        display: inline-flex; /* the boxes sit next to each other on the same line */
+    }
+    .menu-bar img{
+        width: 50px; /* selects the width of an element */
+        height: 57px; /* selects the height of an element */
+        margin-left: 5px; /* the distance between one element and the edge(left) */
+        margin-top:-0.2px; /* the distance between one element and the edge(top) */
+    }
+    .menu-bar ul li{
+        width: 75px;  /* selects the width of an element */
+        margin-left: -20px; /* the distance between one element and the edge(left) */
+        margin-right: 17px; /* the distance between one element and the edge(right) */
+    }
+    .active, .menu-bar ul li:hover{ /* changes the background color of each element when you hover over them with the mouse */
+        border-radius: 5px; /* giving it a rounded edge */
+    }
+}
+
+/*** GRID ***/
+/* Displays elements in a row for small screens */
+@media (max-width: 800px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-text-1 {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    .grid-img-1 {
+        grid-column: 1 / 2;
+        grid-row: 2;
+        padding: 2rem;
+    }
+
+    .grid-text-2 {
+        grid-column:  1 / 2;
+        grid-row: 4;
+    }
+
+    .grid-img-2 {
+        grid-column:  1 / 2;
+        grid-row: 5;
+        padding: 2rem;
+    }
+
+    .grid-aside {
+        background-color: lightyellow;
+        grid-column: 1 / 2;
+        grid-row: 3;
+        padding: 1rem;
+    }
+}
+
+/* Three column layout for article + aside */
+@media (min-width: 801px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .grid-text-1 {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    .grid-img-1 {
+        grid-column: 2 / 3;
+        grid-row: 1;
+        padding: 2rem;
+    }
+
+    .grid-text-2 {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+
+    .grid-img-2 {
+        grid-column: 2 / 3;
+        grid-row: 2;
+        padding: 2rem;
+    }
+
+    .grid-aside {
+        background-color: lightyellow;
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+        padding: 1rem;
+    }
+}
+
+/* Ignores elements that are not part of the grid. I.e. "article" which is a semantic tag*/
+.grid-ignore {
+    display: contents;
+}
+
