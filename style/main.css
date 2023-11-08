@@ -37,6 +37,36 @@ body {
     border-radius: 5px; /* giving it a rounded edge */
     background-color: antiquewhite; /* background color*/
 }
+/*** ICON MENU ***/
+.icon-menu{
+    top: -30%; /* the value of top can move the element up or down as needed */
+    height: 2px; /* selects the height of an element */
+    width: 17px; /* selects the width of an element */
+    position: relative; /* the positioning properties that can be used to control the location */
+    background-color: black; /* background color */
+}
+.icon-menu::before,.icon-menu::after{
+    width: 17px; /* selects the width of an element */
+    height: 2px; /* selects the height of an element */
+    content: " "; /* "content" refers to a property used with (::before and ::after) to insert additional content into HTML.
+    This property allows you to add decorative elements or text to an element without changing the HTML code itself */
+    position: absolute; /* the positioning properties that can be used to control the location */
+    background-color: black; /* background color */
+}
+.icon-menu::before{
+    top: -7px; /* the value of top can move the element up or down as needed */
+}
+.icon-menu::after{
+    top: 7px; /* the value of top can move the element up or down as needed */
+}
+.pages{
+    text-align: right; /* adjustment of the text */
+}
+.icon-menu ,.pages{
+    display: inline-flex; /* affects how the element is placed and other elements next to it */
+    margin-left: 3px; /* the distance between one element and the edge(left) */
+}
+/*** SUB MENU **/
 .sub-menu{
     display: none; /* affects how the element is placed and other elements next to it */
 }
@@ -68,45 +98,12 @@ body {
 .menu-bar .fa{ /* distance between icon and text */
     margin-right: 5px; /* the distance between one element and the edge(right) */
 }
-
-
-.icon-menu{
-    width: 17px;
-    height: 2px;
-    background-color: black;
-    position: relative;
-    top: -20%;
-}
-.icon-menu::before,
-.icon-menu::after{
-    content: " ";
-    position: absolute;
-    width: 17px;
-    height: 2px;
-    background-color: black;
-}
-.icon-menu::before{
-    top: -7px;
-}
-.icon-menu::after{
-    top: 7px;
-}
-
-.pages{
-    text-align: right;
-}
-.icon-menu ,.pages{
-    display: inline-flex;
-    margin-left: 3px;
-}
-
-
-/*   */
+/* The picture in the home page */
 .image-name {
     color: #FED500; /* */
     font-weight: 500; /* */
 }
-/* */
+/* class in the div element for caption */
 .caption p{
     display: inline; /* */
 }
@@ -119,7 +116,7 @@ body {
     /*Lag nye classer for grid boksen din i index og fylt ut her i css*/
 }
 /* the specific style rules within the media query block are only enabled
-when the browser window or device has a width of 800 pixels or less */
+when the browser window or device has a width of 700 pixels or less */
 @media (max-width: 700px) {
     header {
         font-size: 12px;
