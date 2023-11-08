@@ -68,6 +68,39 @@ body {
 .menu-bar .fa{ /* distance between icon and text */
     margin-right: 5px; /* the distance between one element and the edge(right) */
 }
+
+
+.icon-menu{
+    width: 17px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    top: -20%;
+}
+.icon-menu::before,
+.icon-menu::after{
+    content: " ";
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background-color: black;
+}
+.icon-menu::before{
+    top: -7px;
+}
+.icon-menu::after{
+    top: 7px;
+}
+
+.pages{
+    text-align: right;
+}
+.icon-menu ,.pages{
+    display: inline-flex;
+    margin-left: 3px;
+}
+
+
 /*   */
 .image-name {
     color: #FED500; /* */
