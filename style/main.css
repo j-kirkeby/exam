@@ -39,32 +39,17 @@ body {
 }
 /*** ICON MENU ***/
 .icon-menu{
-    top: -30%; /* the value of top can move the element up or down as needed */
-    height: 2px; /* selects the height of an element */
-    width: 17px; /* selects the width of an element */
-    position: relative; /* the positioning properties that can be used to control the location */
-    background-color: black; /* background color */
-}
-.icon-menu::before,.icon-menu::after{
-    width: 17px; /* selects the width of an element */
-    height: 2px; /* selects the height of an element */
-    content: " "; /* "content" refers to a property used with (::before and ::after) to insert additional content into HTML.
-    This property allows you to add decorative elements or text to an element without changing the HTML code itself */
-    position: absolute; /* the positioning properties that can be used to control the location */
-    background-color: black; /* background color */
-}
-.icon-menu::before{
-    top: -7px; /* the value of top can move the element up or down as needed */
-}
-.icon-menu::after{
-    top: 7px; /* the value of top can move the element up or down as needed */
+    background-image: url("../media/menu.png");
+    background-size: cover;
+    height: 20px;
+    width: 20px;
 }
 .pages{
-    text-align: right; /* adjustment of the text */
+    text-align: center; /* adjustment of the text */
+    padding: 5px;
 }
-.icon-menu ,.pages{
-    display: inline-flex; /* affects how the element is placed and other elements next to it */
-    margin-left: 3px; /* the distance between one element and the edge(left) */
+.icon-menu, .pages{
+    display: inline-flex;
 }
 /*** SUB MENU **/
 .sub-menu{
