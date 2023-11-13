@@ -6,6 +6,11 @@ body {
     margin: 0; /* the distance between one element and the edge */
     font-family: Tahoma, serif; /* choose a font that fits */
 }
+
+img {
+    width: 100%;
+}
+
 /*** NAVBAR ***/
 .menu-bar{ /* refers to the class */
     text-align: right; /* adjustment of the text */
@@ -174,7 +179,6 @@ when the browser window or device has a width of 700 pixels or less */
         grid-column: 1 / 2;
         grid-row: 3;
         padding: 1rem;
-        font-size: 0.8rem;
     }
 }
 
@@ -182,12 +186,12 @@ when the browser window or device has a width of 700 pixels or less */
 @media (min-width: 701px) {
     .wrapper {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .wrapper-with-aside {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 2fr 2fr 1fr;
     }
 
     .grid-text-1 {
@@ -219,7 +223,6 @@ when the browser window or device has a width of 700 pixels or less */
         grid-column: 3 / 4;
         grid-row: 1 / 3;
         padding: 1rem;
-        font-size: 0.8rem;
     }
 }
 

@@ -43,40 +43,39 @@
             <div class="grid-text-1">
                 <h1>Accessibility</h1>
                 <h2>WAVE - Test results</h2>
-                <p>WAVE test results, findings:</p>
+                <p>We ran our site through the WAVE test using Github to publish the page. The results for this page
+                    (Accessibility) were:</p>
                 <ul>
-                    <li>List item 1</li>
-                    <li>List item 2</li>
-                    <li>List item 3</li>
+                    <li>Errors: 0</li>
+                    <li>Contrast errors: 0</li>
+                    <li><strong>Alerts: 1</strong></li>
+                    <li>Features: 4</li>
+                    <li>Structural elements: 16</li>
+                    <li>ARIA: 0</li>
                 </ul>
+                <p>The <strong>alert</strong> was regarding a repeated link in our navigation bar, where both the pages
+                    image and text were separate links. This could be fixed by making the entire box a link instead.</p>
             </div>
             <div class="grid-img-1">
-                <img class="article-image" src="../media/wave-test.png" alt="Results screen from WAVE test">
+                <picture>
+                    <source media="(min-width:701px)" srcset="../media/wave-test-large.png">
+                    <img src="../media/wave-test-small.png" alt="Results from WAVE test">
+                </picture>
+                <p class="caption"><span class="image-name">Results from WAVE test</span> / Photo: Screenshot</p>
             </div>
             <div class="grid-text-2">
-                <h2>Lighthouse - Test results</h2>
-                <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-                    Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+                <h2>Scalability - Screen/Phone</h2>
+                <p>We used the <a href="https://chromewebstore.google.com/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk?pli=1" title="Link to the Chrome Store page for the Mobile simulator-extension">Mobile Simulator</a>
+                    extension in Chrome to check that the page would be readable on smaller devices.</p>
             </div>
             <div class="grid-img-2">
-                <img class="article-image" src="../media/lighthouse-test.jpg" alt="Results screen from Lighthouse test">
+                <img src="../media/phone-view.png" alt="Phone view of this page">
+                <p class="caption"><span class="image-name">Phone view</span> / Photo: Screenshot</p>
             </div>
         </article>
 
         <div class="grid-aside">
             <aside>
-                <h2>A good user interface is...</h2>
-                <!--Using the semantic element <strong> to indicate which aspects are most important-->
-                <!--List from lecture 9 on accessibility in Canvas-->
-                <ul>
-                    <li>Secure</li>
-                    <li><strong>Functional</strong></li>
-                    <li><strong>Accessible</strong></li>
-                    <li><strong>User friendly</strong></li>
-                    <li>Appealing</li>
-                </ul>
-                <p>The <b>bold</b> aspects are most important for this course.</p>
-
                 <h2>Web Accessibility Initiative</h2>
                 <p>The Web Accessibility Initiative have created the Web Content Accessibility Guidelines
                     (<a href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/">WCAG2</a>). Which provide insight for important
@@ -89,6 +88,18 @@
                     <li>Make text readable and understandable</li>
                     <li>Make content appear and operate in predictable ways</li>
                 </ul>
+
+                <h2>A good user interface is...</h2>
+                <!--Using the semantic element <strong> to indicate which aspects are most important-->
+                <!--List from lecture 9 on accessibility in Canvas-->
+                <ul>
+                    <li>Secure</li>
+                    <li><strong>Functional</strong></li>
+                    <li><strong>Accessible</strong></li>
+                    <li><strong>User friendly</strong></li>
+                    <li>Appealing</li>
+                </ul>
+                <p>The <b>bold</b> aspects are most important for this course.</p>
             </aside>
         </div>
     </main>
