@@ -103,6 +103,10 @@ img {
         width: 400px;
         height: 250px;
     }
+    .image-canteen img{
+        width: 700px;
+        height: 300px;
+    }
     /*Lag nye classer for grid boksen din i index og fylt ut her i css*/
 }
 /* the specific style rules within the media query block are only enabled
