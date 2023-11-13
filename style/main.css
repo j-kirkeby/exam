@@ -3,80 +3,76 @@
     box-sizing: border-box; /* */
 }
 body {
+    margin: 0; /* the distance between one element and the edge */
     font-family: Tahoma, serif; /* choose a font that fits */
-    margin: 0;
 }
-
-footer {
-    background-color: #FED500; /* background color */
-}
-
-aside {
-
-}
-
-.article-image {
-    max-width: 300px;
-}
-
-/* Text under image */
-.image-name {
-    font-weight: 500;
-    color: orange;
-}
-
 /*** NAVBAR ***/
 .menu-bar{ /* refers to the class */
-    background-color: #FED500; /* background color */
     text-align: right; /* adjustment of the text */
+    background-color: #FED500; /* background color */
 }
 .menu-bar img{ /* refers to img in the menu-bar */
     float: left; /* places the image on the left */
-    margin-top:-0.2px; /* the distance between one element and the edge(above) */
-    margin-left: 40px; /* the distance between one element and the edge(left) */
     width: 90px; /* selects the width of an element */
     height: 70px; /* selects the height of an element */
+    margin-top:-0.2px; /* the distance between one element and the edge(above) */
+    margin-left: 40px; /* the distance between one element and the edge(left) */
 }
 .menu-bar ul{
-    display: inline-flex; /* affects how the element is placed and other elements next to it */
     list-style: none; /* list-style type none (no list items are displayed */
+    display: inline-flex; /* affects how the element is placed and other elements next to it */
 }
 .menu-bar ul li{
     width: 100px; /* selects the width of an element */
     padding: 10px; /* determines the distance between the content of an HTML element and its borders */
-    margin-right: 50px; /* the distance between one element and the edge(right) */
     text-align: left; /* adjustment of the text */
+    margin-right: 50px; /* the distance between one element and the edge(right) */
 }
 .menu-bar ul li a{
-    text-decoration: none; /* no decoration on the text */
     color: #212120; /* text color */
+    text-decoration: none; /* no decoration on the text */
 }
 /* https://www.w3schools.com/cssref/sel_active.php */
 .active, .menu-bar ul li:hover{ /* changes the background color of each element when you hover over them with the mouse */
+    border-radius: 5px; /* giving it a rounded edge */
     background-color: antiquewhite; /* background color*/
-    border-radius: 2px; /* giving it a rounded edge */
 }
+/*** ICON MENU ***/
+.icon-menu{
+    background-image: url("../media/menu.png");
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+.pages{
+    text-align: center; /* adjustment of the text */
+    padding: 5px;
+}
+.icon-menu, .pages{
+    display: inline-flex;
+}
+/*** SUB MENU **/
 .sub-menu{
     display: none; /* affects how the element is placed and other elements next to it */
 }
 .menu-bar ul li:hover .sub-menu{ /* applies to the sub menu */
     display: block; /* affects how the element is placed and other elements next to it */
+    margin-top: 10px; /* the distance between one element and the edge(top) */
+    margin-left: -15px; /* the distance between one element and the edge(left) */
     position: absolute; /* the positioning properties that can be used to control the location */
     background: #FED500; /* background color */
-    margin-top: 15px; /* the distance between one element and the edge(top) */
-    margin-left: -15px; /* the distance between one element and the edge(left) */
 }
 .menu-bar ul li:hover .sub-menu ul{
-    display: block; /* affects how the element is placed and other elements next to it */
     margin: 10px; /* the distance between one element and the edge */
+    display: block; /* affects how the element is placed and other elements next to it */
 }
 .menu-bar ul li:hover .sub-menu ul li{
     width: 150px; /* selects the width of an element */
     padding: 10px; /* determines the distance between the content of an HTML element and its borders */
-    border-bottom: 1px dotted antiquewhite; /* the element will have a 1 pixel wide bottom border which is dashed and has a corresponding colour */
-    background: transparent; /* sets the rear background color of an element to transparent */
-    border-radius: 0; /* giving it a rounded edge */
     text-align: left; /* adjustment of the text */
+    border-radius: 0; /* giving it a rounded edge */
+    background: transparent; /* sets the rear background color of an element to transparent */
+    border-bottom: 1px dotted antiquewhite; /* the element will have a 1 pixel wide bottom border which is dashed and has a corresponding colour */
 }
 .menu-bar ul li:hover .sub-menu ul li:last-child{ /* last line */
     border-bottom: none; /* Removes the last line */
@@ -87,13 +83,29 @@ aside {
 .menu-bar .fa{ /* distance between icon and text */
     margin-right: 5px; /* the distance between one element and the edge(right) */
 }
+/* The picture in the home page */
+.image-name {
+    color: #FED500; /* */
+    font-weight: 500; /* */
+}
+/* class in the div element for caption */
+.caption p{
+    display: inline; /* */
+}
+/* */
+@media (min-width: 701px) {
+    .image-p35 img{
+        width: 400px;
+        height: 250px;
+    }
+    /*Lag nye classer for grid boksen din i index og fylt ut her i css*/
+}
 /* the specific style rules within the media query block are only enabled
-when the browser window or device has a width of 800 pixels or less */
+when the browser window or device has a width of 700 pixels or less */
 @media (max-width: 700px) {
     header {
         font-size: 12px;
     }
-
     .menu-bar{
         width: 100%; /* selects the width of an element */
         text-align: right; /* adjustment of the text */
@@ -114,17 +126,10 @@ when the browser window or device has a width of 800 pixels or less */
         border-radius: 5px; /* giving it a rounded edge */
     }
     .image-p35 img{
-        max-width: 250px;
-        max-height: 200px;
+        width: 150px;
+        height: 200px;
     }
-}
-.image-p35 img{
-    width: 450px;
-    height: 350px;
-}
-
-.caption h4,p{
-    display: inline;
+    /*Lag nye classer for grid boksen din i index og fylt ut her i css*/
 }
 
 /*** GRID ***/
@@ -141,9 +146,9 @@ when the browser window or device has a width of 800 pixels or less */
     }
 
     .grid-text-1 {
+        padding: 2rem;
         grid-column: 1 / 2;
         grid-row: 1;
-        padding: 2rem;
     }
 
     .grid-img-1 {
@@ -222,6 +227,11 @@ when the browser window or device has a width of 800 pixels or less */
 .grid-ignore {
     display: contents;
 }
+.article-image {
+    max-width: 300px;
+}
 
 
-
+footer {
+    background-color: #FED500; /* background color */
+}
