@@ -90,7 +90,7 @@ img {
 }
 /* The picture in the home page */
 .image-name {
-    color: #dbbbf5; /* */
+    color: #FED500; /* */
     font-weight: 500; /* */
 }
 /* class in the div element for caption */
@@ -239,5 +239,5 @@ when the browser window or device has a width of 700 pixels or less */
 
 
 footer {
-    background-color: #dbbbf5; /* background color */
+    background-color: #FED500; /* background color */
 }
