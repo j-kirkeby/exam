@@ -7,7 +7,7 @@ body {
     font-family: Tahoma, serif; /* choose a font that fits */
 }
 img {
-    width: 100%;
+    width: 100%; /* selects the width of an image */
 }
 /*** NAVBAR ***/
 .menu-bar{ /* refers to the class */
@@ -16,7 +16,7 @@ img {
 }
 .menu-bar img{ /* refers to img in the menu-bar */
     float: left; /* places the image on the left */
-    width: 90px; /* selects the width of an element */
+    width: 90px; /* selects the width of an image */
     height: 75px; /* selects the height of an element */
     margin-top:-0.2px; /* the distance between one element and the edge(above) */
     margin-left: 40px; /* the distance between one element and the edge(left) */
@@ -44,8 +44,8 @@ img {
 .icon-menu{
     background-image: url("../media/menu.png");
     background-size: cover;
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
 }
 .pages{
     padding: 4px;
@@ -82,13 +82,10 @@ img {
 .menu-bar ul li:hover .sub-menu ul li a:hover{ /* changes the background color of each element when you hover over them with the mouse */
     color: antiquewhite; /* text color */
 }
-.menu-bar .fa{ /* distance between icon and text */
-    margin-right: 5px; /* the distance between one element and the edge(right) */
-}
 /* The picture in the home page */
 .image-name-index {
-    color: rebeccapurple; /* */
-    font-weight: 1000; /* */
+    color: rebeccapurple; /* text color */
+    font-weight: 1000; /* text size */
 }
 /* class in the div element for caption */
 .caption p{
@@ -110,7 +107,6 @@ when the browser window or device has a width of 700 pixels or less */
         height: 60px; /* selects the height of an element */
         margin-left: 5px; /* the distance between one element and the edge(left) */
         margin-top:-0.2px; /* the distance between one element and the edge(top) */
-
     }
     .menu-bar ul li{
         width: 80px;  /* selects the width of an element */
@@ -119,13 +115,6 @@ when the browser window or device has a width of 700 pixels or less */
     }
     .active, .menu-bar ul li:hover{ /* changes the background color of each element when you hover over them with the mouse */
         border-radius: 5px; /* giving it a rounded edge */
-    }
-    .image-p35 img{
-        width: 150px;
-        height: 200px;
-    }
-    .icon-menu, .pages{
-        display: inline-flex;
     }
 }
 
