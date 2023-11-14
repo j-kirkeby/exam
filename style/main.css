@@ -6,11 +6,9 @@ body {
     margin: 0; /* the distance between one element and the edge */
     font-family: Tahoma, serif; /* choose a font that fits */
 }
-
 img {
     width: 100%;
 }
-
 /*** NAVBAR ***/
 .menu-bar{ /* refers to the class */
     text-align: right; /* adjustment of the text */
@@ -19,7 +17,7 @@ img {
 .menu-bar img{ /* refers to img in the menu-bar */
     float: left; /* places the image on the left */
     width: 90px; /* selects the width of an element */
-    height: 70px; /* selects the height of an element */
+    height: 75px; /* selects the height of an element */
     margin-top:-0.2px; /* the distance between one element and the edge(above) */
     margin-left: 40px; /* the distance between one element and the edge(left) */
 }
@@ -30,7 +28,7 @@ img {
 .menu-bar ul li{
     width: 100px; /* selects the width of an element */
     padding: 10px; /* determines the distance between the content of an HTML element and its borders */
-    text-align: left; /* adjustment of the text */
+    text-align: center; /* adjustment of the text */
     margin-right: 50px; /* the distance between one element and the edge(right) */
 }
 .menu-bar ul li a{
@@ -50,8 +48,7 @@ img {
     width: 20px;
 }
 .pages{
-    text-align: center; /* adjustment of the text */
-    padding: 5px;
+    padding: 4px;
 }
 .icon-menu, .pages{
     display: inline-flex;
@@ -89,7 +86,7 @@ img {
     margin-right: 5px; /* the distance between one element and the edge(right) */
 }
 /* The picture in the home page */
-.image-name {
+.image-name-index {
     color: rebeccapurple; /* */
     font-weight: 1000; /* */
 }
@@ -97,35 +94,28 @@ img {
 .caption p{
     display: inline; /* */
 }
-/* */
-@media (min-width: 701px) {
-    .image-p35 img{
-        width: 400px;
-        height: 250px;
-    }
-    /*Lag nye classer for grid boksen din i index og fylt ut her i css*/
-}
 /* the specific style rules within the media query block are only enabled
 when the browser window or device has a width of 700 pixels or less */
 @media (max-width: 700px) {
     header {
         font-size: 12px;
     }
-    .menu-bar{
+    .menu-bar {
         width: 100%; /* selects the width of an element */
         text-align: right; /* adjustment of the text */
         display: inline-flex; /* the boxes sit next to each other on the same line */
     }
     .menu-bar img{
         width: 50px; /* selects the width of an element */
-        height: 57px; /* selects the height of an element */
+        height: 60px; /* selects the height of an element */
         margin-left: 5px; /* the distance between one element and the edge(left) */
         margin-top:-0.2px; /* the distance between one element and the edge(top) */
+
     }
     .menu-bar ul li{
-        width: 75px;  /* selects the width of an element */
+        width: 80px;  /* selects the width of an element */
         margin-left: -20px; /* the distance between one element and the edge(left) */
-        margin-right: 17px; /* the distance between one element and the edge(right) */
+        margin-right: 19px; /* the distance between one element and the edge(right) */
     }
     .active, .menu-bar ul li:hover{ /* changes the background color of each element when you hover over them with the mouse */
         border-radius: 5px; /* giving it a rounded edge */
@@ -134,7 +124,9 @@ when the browser window or device has a width of 700 pixels or less */
         width: 150px;
         height: 200px;
     }
-    /*Lag nye classer for grid boksen din i index og fylt ut her i css*/
+    .icon-menu, .pages{
+        display: inline-flex;
+    }
 }
 
 /*** GRID ***/
@@ -236,5 +228,5 @@ when the browser window or device has a width of 700 pixels or less */
 
 
 footer {
-    background-color: #FED500; /* background color */
+    background-color: #dbbbf5; /* background color */
 }
