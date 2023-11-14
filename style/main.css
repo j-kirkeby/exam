@@ -14,7 +14,7 @@ img {
 /*** NAVBAR ***/
 .menu-bar{ /* refers to the class */
     text-align: right; /* adjustment of the text */
-    background-color: #FED500; /* background color */
+    background-color: #dbbbf5; /* background color */
 }
 .menu-bar img{ /* refers to img in the menu-bar */
     float: left; /* places the image on the left */
@@ -65,7 +65,7 @@ img {
     margin-top: 10px; /* the distance between one element and the edge(top) */
     margin-left: -15px; /* the distance between one element and the edge(left) */
     position: absolute; /* the positioning properties that can be used to control the location */
-    background: #FED500; /* background color */
+    background: #dbbbf5; /* background color */
 }
 .menu-bar ul li:hover .sub-menu ul{
     margin: 10px; /* the distance between one element and the edge */
@@ -90,7 +90,7 @@ img {
 }
 /* The picture in the home page */
 .image-name {
-    color: #FED500; /* */
+    color: #dbbbf5; /* */
     font-weight: 500; /* */
 }
 /* class in the div element for caption */
@@ -239,5 +239,5 @@ when the browser window or device has a width of 700 pixels or less */
 
 
 footer {
-    background-color: #FED500; /* background color */
+    background-color: #dbbbf5; /* background color */
 }
