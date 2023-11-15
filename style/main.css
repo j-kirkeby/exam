@@ -182,7 +182,7 @@ when the browser window or device has a width of 700 pixels or less */
 
     .wrapper-with-aside {
         display: grid;
-        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-columns: 3fr 3fr 2fr;
     }
 
     .grid-text-1 {
