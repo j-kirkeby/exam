@@ -256,12 +256,15 @@ footer ul {
         grid-template-columns: 1fr;
     }
 
+    .footer-left {
+        padding-bottom: 20px;
+    }
 
     .footer-middle {
         border-top: white 4px dotted;
         border-bottom: white 4px dotted;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .footer-right {
