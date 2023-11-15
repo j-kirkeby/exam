@@ -2,9 +2,18 @@
 * {
     box-sizing: border-box; /* */
 }
+
+html {margin:0;}
+
 body {
-    margin: 0; /* the distance between one element and the edge */
+/*    margin: 0; !* the distance between one element and the edge *!*/
+    margin: 0;
     font-family: Tahoma, serif; /* choose a font that fits */
+}
+
+footer {
+    background-color: black;
+    color: white;
 }
 
 img {
@@ -137,7 +146,7 @@ when the browser window or device has a width of 700 pixels or less */
     /*Lag nye classer for grid boksen din i index og fylt ut her i css*/
 }
 
-/*** GRID ***/
+/*** MAIN/BODY GRID ***/
 /* Displays elements in a row for small screens */
 @media (max-width: 700px) {
     .wrapper {
@@ -175,7 +184,7 @@ when the browser window or device has a width of 700 pixels or less */
     }
 
     .grid-aside {
-        background-color: #e0d5e8;
+        background-color: lightyellow;
         grid-column: 1 / 2;
         grid-row: 3;
         padding: 1rem;
@@ -219,7 +228,7 @@ when the browser window or device has a width of 700 pixels or less */
     }
 
     .grid-aside {
-        background-color: #e0d5e8;
+        background-color: lightyellow;
         grid-column: 3 / 4;
         grid-row: 1 / 3;
         padding: 1rem;
@@ -230,11 +239,57 @@ when the browser window or device has a width of 700 pixels or less */
 .grid-ignore {
     display: contents;
 }
-.article-image {
-    max-width: 300px;
+
+/* FOOTER */
+/* Large screen */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none; /* Remove dot for unordered list */
+    text-align: center;
+    padding-left: 0;
+}
+
+.footer-right img {
+    width: 50%;
+}
+
+.footer-right {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Small screen */
+@media (max-width: 700px) {
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-left {
+        padding-bottom: 20px;
+    }
+
+    .footer-middle {
+        border-top: white 4px dotted;
+        border-bottom: white 4px dotted;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer-right {
+        padding-top: 40px;
+    }
 }
 
 
-footer {
-    background-color: #FED500; /* background color */
-}
+
+
