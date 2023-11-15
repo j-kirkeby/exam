@@ -108,7 +108,7 @@ when the browser window or device has a width of 700 pixels or less */
     }
 }
 /* The picture in the home page */
-.image-name-index {
+.image-name{
     color: rebeccapurple; /* */
     font-weight: 1000; /* */
 }
