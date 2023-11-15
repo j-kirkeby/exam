@@ -6,12 +6,6 @@ body {
     margin: 0; /* the distance between one element and the edge */
     font-family: Tahoma, serif; /* choose a font that fits */
 }
-
-footer {
-    background-color: black;
-    color: white;
-}
-
 img {
     width: 100%;
 }
@@ -54,13 +48,11 @@ img {
     height: 18px;
     width: 18px;
 }
-.pages{
-    padding: 4px;
+.icon-menu{
+    display: block;
+    padding-left: 20px;
 }
-.icon-menu, .pages{
-    display: inline-flex;
-}
-/*** SUB MENU **/
+/*** SUB MENU ***/
 .sub-menu{
     display: none; /* affects how the element is placed and other elements next to it */
 }
@@ -89,18 +81,6 @@ img {
 .menu-bar ul li:hover .sub-menu ul li a:hover{ /* changes the background color of each element when you hover over them with the mouse */
     color: antiquewhite; /* text color */
 }
-.menu-bar .fa{ /* distance between icon and text */
-    margin-right: 5px; /* the distance between one element and the edge(right) */
-}
-/* The picture in the home page */
-.image-name {
-    color: rebeccapurple; /* */
-    font-weight: 1000; /* */
-}
-/* class in the div element for caption */
-.caption p{
-    display: inline; /* */
-}
 /* the specific style rules within the media query block are only enabled
 when the browser window or device has a width of 700 pixels or less */
 @media (max-width: 700px) {
@@ -123,9 +103,18 @@ when the browser window or device has a width of 700 pixels or less */
         margin-left: -20px; /* the distance between one element and the edge(left) */
         margin-right: 19px; /* the distance between one element and the edge(right) */
     }
-    .active, .menu-bar ul li:hover{ /* changes the background color of each element when you hover over them with the mouse */
-        border-radius: 5px; /* giving it a rounded edge */
+    .icon-menu{
+        background-size: 20px 17px;
     }
+}
+/* The picture in the home page */
+.image-name-index {
+    color: rebeccapurple; /* */
+    font-weight: 1000; /* */
+}
+/* class in the div element for caption */
+.caption p{
+    display: inline; /* */
 }
 
 /*** MAIN/BODY GRID ***/
@@ -223,6 +212,10 @@ when the browser window or device has a width of 700 pixels or less */
 }
 
 /* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+}
 /* Large screen */
 .footer-grid {
     display: grid;
