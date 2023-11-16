@@ -10,6 +10,28 @@ img {
     width: 100%;
 }
 
+/* The picture in the home page */
+.image-name{
+    color: rebeccapurple; /* */
+    font-weight: 1000; /* */
+}
+
+/* class in the div element for caption */
+.caption p{
+    display: inline; /* */
+}
+
+/*** Grid ***/
+.grid{
+    background-color: antiquewhite;
+    padding: 50px;
+}
+.grid1{
+    background-color: aqua;
+}
+
+
+
 /*** NAVBAR ***/
 .menu-bar{ /* refers to the class */
     text-align: right; /* adjustment of the text */
@@ -41,6 +63,7 @@ img {
     border-radius: 5px; /* giving it a rounded edge */
     background-color: antiquewhite; /* background color*/
 }
+
 /*** ICON MENU ***/
 .icon-menu{
     background-image: url("../media/menu.png");
@@ -52,6 +75,7 @@ img {
     display: block;
     padding-left: 20px;
 }
+
 /*** SUB MENU ***/
 .sub-menu{
     display: none; /* affects how the element is placed and other elements next to it */
@@ -81,6 +105,7 @@ img {
 .menu-bar ul li:hover .sub-menu ul li a:hover{ /* changes the background color of each element when you hover over them with the mouse */
     color: antiquewhite; /* text color */
 }
+
 /* the specific style rules within the media query block are only enabled
 when the browser window or device has a width of 700 pixels or less */
 @media (max-width: 700px) {
@@ -107,14 +132,10 @@ when the browser window or device has a width of 700 pixels or less */
         background-size: 20px 17px;
     }
 }
-/* The picture in the home page */
-.image-name{
-    color: rebeccapurple; /* */
-    font-weight: 1000; /* */
-}
-/* class in the div element for caption */
-.caption p{
-    display: inline; /* */
+
+/* Ignores elements that are not part of the grid. I.e. "article" which is a semantic tag*/
+.grid-ignore {
+    display: contents;
 }
 
 /*** MAIN/BODY GRID ***/
@@ -124,36 +145,30 @@ when the browser window or device has a width of 700 pixels or less */
         display: grid;
         grid-template-columns: 1fr;
     }
-
     .wrapper-with-aside {
         display: grid;
         grid-template-columns: 1fr;
     }
-
     .grid-text-1 {
         padding: 2rem;
         grid-column: 1 / 2;
         grid-row: 1;
     }
-
     .grid-img-1 {
         grid-column: 1 / 2;
         grid-row: 2;
         padding: 2rem;
     }
-
     .grid-text-2 {
         grid-column:  1 / 2;
         grid-row: 4;
         padding: 2rem;
     }
-
     .grid-img-2 {
         grid-column:  1 / 2;
         grid-row: 5;
         padding: 2rem;
     }
-
     .grid-aside {
         background-color: lightyellow;
         grid-column: 1 / 2;
@@ -168,36 +183,30 @@ when the browser window or device has a width of 700 pixels or less */
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
     .wrapper-with-aside {
         display: grid;
         grid-template-columns: 3fr 3fr 2fr;
     }
-
     .grid-text-1 {
         grid-column: 1 / 2;
         grid-row: 1;
         padding: 2rem;
     }
-
     .grid-img-1 {
         grid-column: 2 / 3;
         grid-row: 1;
         padding: 2rem;
     }
-
     .grid-text-2 {
         grid-column: 1 / 2;
         grid-row: 2;
         padding: 2rem;
     }
-
     .grid-img-2 {
         grid-column: 2 / 3;
         grid-row: 2;
         padding: 2rem;
     }
-
     .grid-aside {
         background-color: lightyellow;
         grid-column: 3 / 4;
@@ -206,60 +215,47 @@ when the browser window or device has a width of 700 pixels or less */
     }
 }
 
-/* Ignores elements that are not part of the grid. I.e. "article" which is a semantic tag*/
-.grid-ignore {
-    display: contents;
-}
-
 /* FOOTER */
+/* Large screen */
 footer {
     background-color: black;
     color: white;
 }
-/* Large screen */
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
 footer h3 {
     text-align: center;
     text-decoration: underline;
 }
-
 footer ul {
     list-style: none; /* Remove dot for unordered list */
     text-align: center;
     padding-left: 0;
 }
-
 .footer-right img {
     width: 50%;
 }
-
 .footer-right {
     text-align: center;
     padding-top: 20px;
 }
-
 /* Small screen */
 @media (max-width: 700px) {
     .footer-grid {
         display: grid;
         grid-template-columns: 1fr;
     }
-
     .footer-left {
         padding-bottom: 20px;
     }
-
     .footer-middle {
         border-top: white 4px dotted;
         border-bottom: white 4px dotted;
         padding-top: 20px;
         padding-bottom: 20px;
     }
-
     .footer-right {
         padding-top: 40px;
     }
