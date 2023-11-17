@@ -21,15 +21,12 @@ img {
     display: inline; /* */
 }
 
+
 /*** Grid ***/
-.grid{
+.grid-text-3{
     background-color: antiquewhite;
     padding: 50px;
 }
-.grid1{
-    background-color: aqua;
-}
-
 
 
 /*** NAVBAR ***/
@@ -49,10 +46,11 @@ img {
     display: inline-flex; /* affects how the element is placed and other elements next to it */
 }
 .menu-bar ul li{
-    width: 100px; /* selects the width of an element */
     padding: 10px; /* determines the distance between the content of an HTML element and its borders */
     text-align: center; /* adjustment of the text */
     margin-right: 50px; /* the distance between one element and the edge(right) */
+    width: 8em; /* selects the width of an element */
+    height: 5ex;
 }
 .menu-bar ul li a{
     color: #212120; /* text color */
@@ -66,14 +64,12 @@ img {
 
 /*** ICON MENU ***/
 .icon-menu{
-    background-image: url("../media/menu.png");
-    background-size: cover;
+    background-image: url("../media/menu.png"); /* */
+    background-size: cover; /* */
+    padding-left: 20px;
+    display: block;
     height: 18px;
     width: 18px;
-}
-.icon-menu{
-    display: block;
-    padding-left: 20px;
 }
 
 /*** SUB MENU ***/
@@ -82,7 +78,7 @@ img {
 }
 .menu-bar ul li:hover .sub-menu{ /* applies to the sub menu */
     display: block; /* affects how the element is placed and other elements next to it */
-    margin-top: 10px; /* the distance between one element and the edge(top) */
+    margin-top: 14px; /* the distance between one element and the edge(top) */
     margin-left: -15px; /* the distance between one element and the edge(left) */
     position: absolute; /* the positioning properties that can be used to control the location */
     background: #dbbbf5; /* background color */
@@ -114,7 +110,6 @@ when the browser window or device has a width of 700 pixels or less */
     }
     .menu-bar {
         width: 100%; /* selects the width of an element */
-        text-align: right; /* adjustment of the text */
         display: inline-flex; /* the boxes sit next to each other on the same line */
     }
     .menu-bar img{
@@ -124,9 +119,10 @@ when the browser window or device has a width of 700 pixels or less */
         margin-top:-0.2px; /* the distance between one element and the edge(top) */
     }
     .menu-bar ul li{
-        width: 80px;  /* selects the width of an element */
         margin-left: -20px; /* the distance between one element and the edge(left) */
-        margin-right: 19px; /* the distance between one element and the edge(right) */
+        margin-right: 15px; /* the distance between one element and the edge(right) */
+        width: 7em; /* selects the width of an element */
+        height: 5ex;
     }
     .icon-menu{
         background-size: 20px 17px;
@@ -247,15 +243,18 @@ footer ul {
         display: grid;
         grid-template-columns: 1fr;
     }
+
     .footer-left {
         padding-bottom: 20px;
     }
+
     .footer-middle {
         border-top: white 4px dotted;
         border-bottom: white 4px dotted;
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
     .footer-right {
         padding-top: 40px;
     }
