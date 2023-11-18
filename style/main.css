@@ -50,7 +50,6 @@ img {
     letter-spacing: 1px;
 }
 
-
 /*** Special stylings for grid boxes***/
 .alt-background-color{
     background-color: antiquewhite;
@@ -60,7 +59,6 @@ img {
     border: 3px dotted;
     margin: 5px;
 }
-
 
 /*** NAVBAR ***/
 .menu-bar{ /* refers to the class */
@@ -143,26 +141,23 @@ when the browser window or device has a width of 700 pixels or less */
         font-size: 12px;
     }
     .menu-bar {
-        width: 100%; !* selects the width of an element *!
-        display: inline-flex; !* the boxes sit next to each other on the same line *!
-    }
-    .menu-bar img{
-        width: 50px; !* selects the width of an element *!
-        height: 60px; !* selects the height of an element *!
-        margin-left: 5px; !* the distance between one element and the edge(left) *!
-        margin-top:-0.2px; !* the distance between one element and the edge(top) *!
-    }
+        width: 100%; /* selects the width of an element */
+        /*display: inline-flex; /* the boxes sit next to each other on the same line */
+    /*}
     .menu-bar ul li{
-        margin-left: -20px; !* the distance between one element and the edge(left) *!
-        margin-right: 15px; !* the distance between one element and the edge(right) *!
-        width: 7em; !* selects the width of an element *!
-        height: 5ex;
+        margin-left: -20px; /* the distance between one element and the edge(left) */
+        /*margin-right: 15px; /* the distance between one element and the edge(right) */
+        /*width: 7em; /* selects the width of an element */
+        /*height: 5ex;
+    }
+    .menu-bar ul li:hover .sub-menu ul li {
+        padding: 5px;
     }
     .icon-menu{
         background-size: 20px 17px;
     }
 }
-*/
+
 
 /* Ignores elements that are not part of the grid. I.e. "article" which is a semantic tag*/
 .grid-ignore {
