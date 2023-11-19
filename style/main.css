@@ -35,8 +35,14 @@ h3{
     text-decoration: underline;
 }
 
-/* Sets some extra padding after a paragraph or list (ordered, unordered)*/
-main p, main ul, main ol{
+/* Sets a different color for text marked as code*/
+code{
+    color: orange;
+    font-size: 1rem; /* Increased size, quite small by default */
+}
+
+/* Sets some extra padding after a paragraph or list (ordered, unordered) at the end of a section*/
+.end-space {
     padding-bottom: 30px;
 }
 

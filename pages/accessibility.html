@@ -41,47 +41,109 @@
     <main class="wrapper-with-aside">
         <!-- Article: content -->
         <article class="grid-ignore">
+            <!-- Grid: line 1, item 1 - Contains article text -->
             <div class="grid-line1-item1">
                 <h1>Accessibility</h1>
-                <h2>WAVE - Final results</h2>
-                <p>We ran our site through the WAVE test using Github to publish the page. The results for this page
-                    (Accessibility) were:</p>
-                <ul>
-                    <li>Errors: 0</li>
-                    <li>Contrast errors: 0</li>
-                    <li><strong>Alerts: 1</strong></li>
-                    <li>Features: 4</li>
-                    <li>Structural elements: 16</li>
-                    <li>ARIA: 0</li>
+                <h2>Summary</h2>
+                <p>For accessibility we have followed the guidelines from Web Content Accessibility Guidelines (WCAG2)
+                    and used an automated test, the Web Accessibility Evaluation Tool (WAVE test),
+                    to find potential problems in the HTML code.</p>
+                <h3>Sections</h3>
+                <ul class="end-space">
+                    <!-- Links to sections of this page -->
+                    <li><a href="##automatic-testing">Automatic testing - WAVE</a></li>
+                    <li><a href="##coding-for-accessibility">Coding for accessibility</a></li>
                 </ul>
-                <p>The <strong>alert</strong> was regarding a repeated link in our navigation bar, where both the pages
-                    image and text were separate links. This could be fixed by making the entire box a link instead.</p>
+                <h2 id="#automatic-testing">Automatic testing - WAVE</h2>
+                <p>The test revealed issues with the HTML code. Here is what we found:</p>
+                <ul>
+                    <li>Skipped from <code>&lt;h2&gt;</code> to <code>&lt;h4&gt;</code> headings</li>
+                    <li>Redundant links: logo and “Home” in the header both links to index</li>
+                    <li>Suspicious link text: links just named “here”, unclear what is linked to</li>
+                    <li>Very low contrast: The footer has black background. The blue (default) and purple (visited)
+                        default color for links did not contrast well.</li>
+                </ul>
+                <p class="end-space">Try the test here: <a href="https://wave.webaim.org/">Webaim</a></p>
+                <h3>Final results and changes</h3>
+                <p>In the final results we have only one alert, which is for "Redundant links". We decided to keep this
+                    as the functionality of the logo linking back to the home page is common, and many users expect
+                    this feature. We don’t see any negative impact from leaving this unchanged.</p>
+                <p>We fixed the other issues:</p>
+                <ul>
+                    <li>Changed <code>&lt;h*&gt;</code> to make sure no levels are skipped</li>
+                    <li>Made link text explanatory</li>
+                    <li>Updated the color of links for the footer to be a lighter shade of blue/purple (kept the colors
+                        as people are used to this functionality).</li>
+                </ul>
             </div>
+            <!-- Grid: line 1, item 2 - Contains article image -->
             <div class="grid-line1-item2">
                 <picture>
+                    <!-- Source for larger image, if width < 701 (<= 700) swap for default -->
                     <source media="(min-width:701px)" srcset="../media/wave-test-large.webp">
-                    <img src="../media/wave-test-small.webp" alt="Results from WAVE test">
+                    <!-- Default source for image -->
+                    <img src="../media/wave-test-small.webp" alt="Results from WAVE, library-page">
                 </picture>
+                <!-- Image caption -->
+                <!-- Span used to set separate CSS for title/description -->
                 <p class="caption"><span class="image-name">Results from WAVE test</span> / Photo: Screenshot</p>
             </div>
+            <!-- Grid: line 2, item 1 - Contains second section-->
             <div class="grid-line2-item1">
-                <h2>Scalability - Screen/Phone</h2>
+                <h2 id="#coding-for-accessibility">Coding for accessibility</h2>
+                <h3>Web Content Accessibility Guidelines</h3>
+                <p>We follow the Web Content Accessibility Guidelines (WCAG2) to make sure the page is functional and
+                    accessible. Here is what we did:</p>
+                <ul class="end-space">
+                    <li>Provide text alternative to non-text content
+                    <ul>
+                        <li><b>We added alt-attribute to all images</b></li>
+                    </ul></li>
+                    <li>Make it easier for users to see and hear content / make text readable and understandable
+                    <ul>
+                        <li><b>We used a readable font</b>
+                            (<a href="https://www.siteimprove.com/glossary/accessible-fonts/" title="Link to siteimprove.com">Tahoma is considered one of the most accessible fonts)</a></li>
+                        <li><b>We maintained a sufficient contrast between background</b></li>
+                        <li><b>We scaled the content for smaller screens</b></li>
+                    </ul></li>
+                    <li>Help users navigate and find content
+                    <ul>
+                        <li><b>We added links in multiple places to help navigation. Header, footer and in text
+                            (front page).</b></li>
+                    </ul></li>
+                    <li>Make content appear and operate in predictable ways
+                    <ul>
+                        <li><b>We followed a usual structure for the layout of the web-page and tagging of text</b></li>
+                    </ul></li>
+                </ul>
+                <h3>Scalability - Screen/Phone</h3>
                 <p>We used the <a href="https://chromewebstore.google.com/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk?pli=1" title="Link to the Chrome Store page for the Mobile simulator-extension">Mobile Simulator</a>
                     extension in Chrome to check that the page would be readable on smaller devices.</p>
+                <p>In the code we used <code>@media</code> queries to change layout and scaling for mobile. Mainly changing the grid layout to a single column for screen <700px wide.</p>
+                <!-- Screenshot of code snippet from the stylesheet -->
+                <img src="../media/code-scaling.png" alt="Code snippet showing media query for small screens">
             </div>
+            <!-- Grid: line 2, item 2 - Section image -->
             <div class="grid-line2-item2">
-                <img src="../media/phone-view.webp" alt="Phone view of this page">
+                <picture>
+                    <!-- Source for larger image, if width < 701 (<= 700) swap for default -->
+                    <source media="(min-width:701px)" srcset="../media/phone-view-large.webp">
+                    <!-- Default source for image -->
+                    <img src="../media/phone-view-small.webp" alt="Phone view of this page">
+                </picture>
+                <!-- Image caption -->
+                <!-- Span used to set separate CSS for title/description -->
                 <p class="caption"><span class="image-name">Phone view</span> / Photo: Screenshot</p>
             </div>
         </article>
-
+        <!-- Aside - Contains some extracts from the lectures and WCAG2 -->
         <div class="grid-aside">
             <aside>
                 <h3>Web Accessibility Initiative</h3>
                 <p>The Web Accessibility Initiative have created the Web Content Accessibility Guidelines
                     (<a href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/">WCAG2</a>). Which provide insight for important
                     aspects consider with regards to accessibility:</p>
-                <ul>
+                <ul class="end-space">
                     <li>Provide text alternatives for non-text content</li>
                     <li>Make it easier for users to see and hear content</li>
                     <li>Make all functionality available from a keyboard</li>
@@ -89,7 +151,6 @@
                     <li>Make text readable and understandable</li>
                     <li>Make content appear and operate in predictable ways</li>
                 </ul>
-
                 <h3>A good user interface is...</h3>
                 <!--Using the semantic element <strong> to indicate which aspects are most important-->
                 <!--List from lecture 9 on accessibility in Canvas-->
