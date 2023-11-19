@@ -270,6 +270,13 @@ footer{
     background-color: black;
     color: white;
 }
+/* Links in the footer */
+footer a:link{
+    color: lightblue; /* Made the colors lighter to improve contrast, but kept blue/purple color that people are used to */
+}
+footer a:visited{
+    color: mediumpurple; /* Made the colors lighter to improve contrast, but kept blue/purple color that people are used to */
+}
 /* Grid wrapper for the footer, three equally sized columns */
 .footer-grid{
     display: grid;
