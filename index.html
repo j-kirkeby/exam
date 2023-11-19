@@ -37,20 +37,18 @@
             </ul>
         </nav>
     </header>
-    <!-- -->
+    <!-- Main page, contains article + aside (if applicable) -->
     <main class="wrapper">
-        <!-- -->
+        <!-- Article: content -->
         <article class="grid-ignore">
-            <!-- -->
+            <!-- Grid: line 1, item 1 - Contains article text-->
             <div class="grid-line1-item1">
-                <!-- -->
                 <h1>Welcome to P35</h1>
                 <h2>What is P35?</h2>
                     <p>P35 is a university building belonging to Oslo Metropolitan University.
                         The building is located in the center of the campus in heart of the Oslo, the capital of Norway.
                         The building homes different faculties and has many facilities for the students such as a canteen, a library, several study rooms and laboratories.</p>
                 <h3> In Oslo Metropolitan University P35 you will find the following: </h3>
-                    <!-- -->
                     <ol>
                         <li>floor is the canteen and follow the link <a href="pages/canteen.html">here</a> for more information about the canteen </li>
                         <li>floor there are classrooms and group rooms that can be booked </li>
@@ -58,21 +56,23 @@
                         <li>floor is (datatorget), where you can gather with fellow students </li>
                     </ol>
             </div>
-            <!-- -->
+            <!-- Grid: line 1, item 2 - Contains article image -->
             <div class="grid-line1-item2">
-                <!-- -->
+                <!-- Contains an image with multiple sources -->
                 <picture>
                     <!-- https://journalen.oslomet.no/2020/10/digital-karriereuke-pa-oslomet -->
-                    <!-- -->
+                    <!-- Source for larger image, if width < 701 (<= 700) swap for default -->
                     <source media="(min-width:701px)" srcset="media/p35-large.webp">
+                    <!-- Default source for image -->
                     <img src="media/p35-small.webp" alt="Picture of the P35 building">
                 </picture>
-                <!-- -->
+                <!-- Image caption -->
                 <div class="caption">
-                    <!-- -->
+                    <!-- Span used to set separate CSS for title/description -->
                     <p><span class="image-name">P35</span> / Photo: OsloMet</p>
                 </div>
             </div>
+            <!-- Grid: line 2, item 1 - Contains: header and text. Custom styling: alternative background color -->
             <div class="grid-line2-item1 alt-background-color">
                 <h3> What is Lorem Ipsum? </h3>
                 <p>
@@ -85,6 +85,7 @@
                     software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
             </div>
+            <!-- Grid: line 2, item 2 - Contains: header and text. Custom styling: alternative background color -->
             <div class="grid-line2-item2 alt-background-color">
                 <h3>Why do we use it?</h3>
                 <p>
@@ -97,8 +98,9 @@
             </div>
         </article>
     </main>
-
+    <!-- Footer: contains 3 grid boxes -->
     <footer class="footer-grid">
+        <!-- Left (small view: top) grid box -->
         <div class="footer-left">
             <h3>Contact us</h3>
             <ul>
@@ -107,6 +109,7 @@
                 <li>Contact us: <a href=”mailto:p35@oslomet.no”>p35@oslomet.no</a></li>
             </ul>
         </div>
+        <!-- Middle grid box -->
         <div class="footer-middle">
             <h3>Pages</h3>
             <ul>
@@ -117,6 +120,7 @@
                 <li><a href="pages/accessibility.html">Accessibility</a></li>
             </ul>
         </div>
+        <!-- Right (small view: bottom) grid box -->
         <div class="footer-right">
             <img src="media/logo-footer.webp" alt="P35 Logo (black)">
             <p>Published by P35</p>

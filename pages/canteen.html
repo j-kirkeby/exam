@@ -37,10 +37,11 @@
             </ul>
         </nav>
     </header>
-
+    <!-- Main text, contains article + aside (if applicable -->
     <main class="wrapper">
+        <!-- Article: content -->
         <article class="grid-ignore">
-            <!-- Section for text content -->
+            <!-- Grid: line 1, item 1 - Contains article text -->
             <div class="grid-line1-item1">
                 <h1>The Canteen</h1>
                 <h2>Olaf spiseri</h2>
@@ -56,21 +57,23 @@
                         <br> Green buffet loose weight NOK 15.90 per 100 grams. //Full buffet loose weight NOK 17.20 per 100 grams.</li>
                 </ul>
             </div>
-            <!-- Section for the image -->
+            <!-- Grid: line 1, item 2 - Contains article image -->
             <div class="grid-line1-item2">
                 <picture>
                     <!--Link to picture: https://unsplash.com/photos/brown-wooden-tables-and-chairs-inside-building-TivEEYzzhik -->
-                    <!-- Source for large screens -->
+                    <!-- Source for larger image, if width < 701 (<= 700) swap for default -->
                     <source media="(min-width:701px)" srcset="../media/canteen-large.webp">
-                    <!-- image for smaller screens -->
+                    <!-- Default source for image -->
                     <img src="../media/canteen-small.webp" alt="Picture of a canteen">
                 </picture>
-                <!-- Caption for the image -->
+                <!-- Image caption -->
                 <div class="caption">
+                    <!-- Span used to set separate CSS for title/description -->
                     <p><span class="image-name">Canteen</span> / Photo: Alexander Kovacs (Unsplash)</p>
                 </div>
             </div>
-            <!-- Another section for text content -->
+            <!-- Grid: line 2, item 1 - Contains additional text: contact info, address -->
+            <!-- Custom styling: dotted outline-->
             <div class="grid-line2-item1 dotted-outline">
                 <h3>Contact information</h3>
                 <ul>
@@ -79,7 +82,8 @@
                     <li>Address: Pilestredet 35, 0166 Oslo</li>
                 </ul>
             </div>
-
+            <!-- Grid: line 2, item 2 - Contains additional text: opening hours -->
+            <!-- Custom styling: alternate background color -->
             <div class="grid-line2-item2 alt-background-color">
                 <h3>Opening hours</h3>
                 <p>Ordinary opening hours:
@@ -87,7 +91,9 @@
             </div>
         </article>
     </main>
+    <!-- Footer: contains 3 grid boxes -->
     <footer class="footer-grid">
+        <!-- Left (small view: top) grid box -->
         <div class="footer-left">
             <h3>Contact us</h3>
             <ul>
@@ -96,6 +102,7 @@
                 <li>Contact us: <a href=”mailto:p35@oslomet.no”>p35@oslomet.no</a></li>
             </ul>
         </div>
+        <!-- Middle grid box -->
         <div class="footer-middle">
             <h3>Pages</h3>
             <ul>
@@ -106,6 +113,7 @@
                 <li><a href="../pages/accessibility.html">Accessibility</a></li>
             </ul>
         </div>
+        <!-- Right (small view: bottom) grid box -->
         <div class="footer-right">
             <img src="../media/logo-footer.webp" alt="P35 Logo (black)">
             <p>Published by P35</p>
