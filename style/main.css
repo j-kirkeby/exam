@@ -43,12 +43,6 @@ h3{
     font-style: italic;
 }
 
-/* Sets a different color for text marked as code*/
-code{
-    color: purple;
-    font-size: 1rem; /* Increased size, quite small by default */
-}
-
 /* Address displays as italic by default, this sets it to normal */
 address {
     font-style: normal;
