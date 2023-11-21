@@ -35,10 +35,33 @@ h3{
     text-decoration: underline;
 }
 
+/* Makes text defined as definitions stand out (to be used on <p>)*/
+.definition {
+    border: 1px dashed;
+    padding: 10px;
+    margin: 10px;
+    font-style: italic;
+}
+
 /* Sets a different color for text marked as code*/
 code{
     color: orange;
     font-size: 1rem; /* Increased size, quite small by default */
+}
+
+/* Address displays as italic by default, this sets it to normal */
+address {
+    font-style: normal;
+}
+
+/* Removes the style and padding default on a list*/
+.unstyled-list {
+    list-style: none;
+    padding-left: 0;
+}
+/* Applied to a list element and will add more space between items */
+.list-item-space li {
+    padding-bottom: 30px;
 }
 
 /* Sets some extra padding after a paragraph or list (ordered, unordered) at the end of a section*/
@@ -60,25 +83,6 @@ img{
 /* class in the div element for caption */
 .caption{
     letter-spacing: 1px; /* Spaces letters for image text - gives a different look */
-}
-
-address { font-style: normal; }
-
-.unorden-liste {
-    list-style: none;
-    padding-left: 0;
-}
-
-/*** Special stylings for grid boxes***/
-/* Alternate background color for certain grid boxes - example: library.html*/
-.alt-background-color{
-    background-color: antiquewhite;
-}
-
-/* Dotted line with some margin for certain grid boxes - example: library.html*/
-.dotted-outline{
-    border: 3px dotted;
-    margin: 5px;
 }
 
 /*** NAVBAR ***/
@@ -154,35 +158,22 @@ address { font-style: normal; }
     color: antiquewhite; /* text color */
 }
 
-/* the specific style rules within the media query block are only enabled
-when the browser window or device has a width of 700 pixels or less */
-/*
-@media screen and (max-width: 700px){
-    header{
-        font-size: 12px;
-    }
-    .menu-bar{
-        width: 100%; /* selects the width of an element */
-        /*display: inline-flex; /* the boxes sit next to each other on the same line */
-    /*}
-    .menu-bar ul li{
-        margin-left: -20px; /* the distance between one element and the edge(left) */
-        /*margin-right: 15px; /* the distance between one element and the edge(right) */
-        /*width: 7em; /* selects the width of an element */
-        /*height: 5ex;
-    }
-    .menu-bar ul li:hover .sub-menu ul li{
-        padding: 5px;
-    }
-    .icon-menu{
-        background-size: 20px 17px;
-    }
-}
-
 /*** MAIN/BODY GRID ***/
 /* Ignores elements that are not part of the grid. I.e. "article" which is a semantic tag*/
 .grid-ignore{
     display: contents;
+}
+
+/*** SPECIAL STYLINGS FOR GRID BOXES***/
+/* Alternate background color for certain grid boxes - example: library.html*/
+.alt-background-color{
+    background-color: antiquewhite;
+}
+
+/* Dotted line with some margin for certain grid boxes - example: library.html*/
+.dotted-outline{
+    border: 3px dotted;
+    margin: 5px;
 }
 
 /* SMALL SCREENS - Displays elements in a row for small screens */
