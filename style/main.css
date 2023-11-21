@@ -62,6 +62,13 @@ img{
     letter-spacing: 1px; /* Spaces letters for image text - gives a different look */
 }
 
+address { font-style: normal; }
+
+.unorden-liste {
+    list-style: none;
+    padding-left: 0;
+}
+
 /*** Special stylings for grid boxes***/
 /* Alternate background color for certain grid boxes - example: library.html*/
 .alt-background-color{
