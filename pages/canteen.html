@@ -37,49 +37,57 @@
             </ul>
         </nav>
     </header>
+    <!-- Main text, contains article + aside (if applicable -->
     <main class="wrapper">
+        <!-- Article: content -->
         <article class="grid-ignore">
-            <!-- Section for text content -->
+            <!-- Grid: line 1, item 1 - Contains article text -->
             <div class="grid-line1-item1">
-                <h1>Canteen in P35</h1>
+                <h1>The Canteen</h1>
                 <h2>Olaf spiseri</h2>
                 <p>Olaf spiseri is the name of the canteen in P35 at OsloMet university. It is located at P35 on the first floor.
                     The canteen offers a buffet with hot dishes, soups, toppings, and bread where you pay by weight.
                     You will also find a wide selection of wraps and spreads, as well as cakes and various hot and cold beverages.</p>
-            </div>
-            <!-- Section for the image -->
-            <div class="grid-line1-item2">
-                <picture>
-                    <!--Link to picture: https://unsplash.com/photos/brown-wooden-tables-and-chairs-inside-building-TivEEYzzhik -->
-                    <!-- Source for large screens -->
-                    <source media="(min-width:701px)" srcset="../media/canteen-large.webp">
-                    <!-- image for smaller screens -->
-                    <img src="../media/canteen-small.webp" alt="Picture of a canteen">
-                </picture>
-                <!-- Caption for the image -->
-                <div class="caption">
-                    <p><span class="image-name">Canteen</span> / Photo: Alexander Kovacs/Unsplash</p>
-                </div>
-            </div>
-            <!-- Another section for text content -->
-            <div class="grid-line2-item1">
                 <h3>Menu</h3>
                 <ul>
                     <li>Buffet:
-                        <br>The buffet offers a selection of hot dishes and plenty of delicious sides.
+                        <br> The buffet offers a selection of hot dishes and plenty of delicious sides.
                         Allergens: see labeling on the buffet.</li>
                     <li>Price:
-                        <br>Green buffet loose weight NOK 15.90 per 100 grams. //Full buffet loose weight NOK 17.20 per 100 grams.</li>
+                        <br> Green buffet loose weight NOK 15.90 per 100 grams. //Full buffet loose weight NOK 17.20 per 100 grams.</li>
                 </ul>
-                <h3>Opening hours</h3>
-                <p>Ordinary opening hours:
-                    <br>Monday - friday: 08.00 - 15.30</p>
+            </div>
+            <!-- Grid: line 1, item 2 - Contains article image -->
+            <div class="grid-line1-item2">
+                <picture>
+                    <!--Link to picture: https://unsplash.com/photos/brown-wooden-tables-and-chairs-inside-building-TivEEYzzhik -->
+                    <!-- Source for larger image, if width < 701 (<= 700) swap for default -->
+                    <source media="(min-width:701px)" srcset="../media/canteen-large.webp">
+                    <!-- Default source for image -->
+                    <img src="../media/canteen-small.webp" alt="Picture of a canteen">
+                </picture>
+                <!-- Image caption -->
+                <div class="caption">
+                    <!-- Span used to set separate CSS for title/description -->
+                    <p><span class="image-name">Canteen</span> / Photo: Alexander Kovacs (Unsplash)</p>
+                </div>
+            </div>
+            <!-- Grid: line 2, item 1 - Contains additional text: contact info, address -->
+            <!-- Custom styling: dotted outline-->
+            <div class="grid-line2-item1 dotted-outline">
                 <h3>Contact information</h3>
                 <ul>
-                    <li>Kitchen: 12345678</li>
-                    <li>Office: 87654321</li>
+                    <li>Kitchen: 12345678 </li>
+                    <li>Office: 87654321 </li>
                     <li>Address: Pilestredet 35, 0166 Oslo</li>
                 </ul>
+            </div>
+            <!-- Grid: line 2, item 2 - Contains additional text: opening hours -->
+            <!-- Custom styling: alternate background color -->
+            <div class="grid-line2-item2 alt-background-color">
+                <h3>Opening hours</h3>
+                <p>Ordinary opening hours:
+                    <br> Monday - friday: <time datetime="08:00+01:00">08.00</time> - <time datetime="15:30+01:00">15.30</time></p>
             </div>
         </article>
     </main>
